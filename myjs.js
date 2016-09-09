@@ -60,4 +60,8 @@ $(document).ready(function(){
     $(".right").click(function(){
         $("#myCarousel").carousel("next");
     });
+
+    $(".btn").click(function(){
+        $("#myCarousel").carousel(0);
+    });  
 });

@@ -75,9 +75,96 @@ h1,h3 {
 }
 
 
-
+/* Carousel  */
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 100%;
       margin: auto;
-  }
+}
+
+
+/* Carousel Control */
+.control-box {
+    text-align: right;
+    width: 100%;
+    margin-top: -80px;
+    margin-left: -45px;
+}
+ .carousel-control {
+        background: #666;
+        border: 0px;
+        border-radius: 0px;
+        display: inline-block;
+        font-size: 34px;
+        font-weight: 200;
+        line-height: 18px;
+        opacity: 0.5;
+        padding: 2px 20px 10px 10px;
+        position: absolute;
+        height: 30px;
+        width: 15px;
+        bottom: 20px;
+    right: 16px;
+}
+
+#back{
+   margin-bottom: 80px;
+    margin-right: 180px; 
+    font-size: 18px;
+    padding: 20px 20px 10px 10px;
+    display: inline-block;
+    height: 30px;
+        width: 75px;
+}
+
+a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+}
+ a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+}
+
+
+.btn {
+       background: #666;
+        border: 0px;
+        border-radius: 0px;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 18px;
+        opacity: 0.5;
+        padding: 0px 50px 0px 50px;
+        position: static;
+        height: 30px;
+        width: 30px;
+        
+        margin-top: -45px;
+    margin-left: 30px;
+}
+
+.btn {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+}
+
+.btn:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+}
+
+.slide{
+    position: relative;
+}
