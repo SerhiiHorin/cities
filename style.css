@@ -14,14 +14,15 @@ body {margin: 0;
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
 }
 
-h1,h3 {
-    text-align: center;
+h1, h3 {
+    text-align: left;
+    margin-left: 20px;
 }
 
 /* Heading1 */
 #heading1 {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #photography {
       transition: box-shadow 0.5s;
@@ -30,9 +31,7 @@ h1,h3 {
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
 }
 
-h1,h3 {
-    text-align: center;
-}
+
 
 /* Buttons */
 .button {
@@ -85,37 +84,28 @@ h1,h3 {
 
 /* Carousel Control */
 .control-box {
-    text-align: right;
+   text-align: right;
     width: 100%;
-    margin-top: -80px;
     margin-left: -45px;
+    margin-top: -40px;
+   
 }
  .carousel-control {
         background: #666;
-        border: 0px;
-        border-radius: 0px;
+        border: 0;
+        border-radius: 0;
         display: inline-block;
         font-size: 34px;
         font-weight: 200;
         line-height: 18px;
         opacity: 0.5;
         padding: 2px 20px 10px 10px;
-        position: absolute;
+        position: static;
         height: 30px;
         width: 15px;
-        bottom: 20px;
-    right: 16px;
 }
 
-#back{
-   margin-bottom: 80px;
-    margin-right: 180px; 
-    font-size: 18px;
-    padding: 20px 20px 10px 10px;
-    display: inline-block;
-    height: 30px;
-        width: 75px;
-}
+
 
 a {
 	-webkit-transition: all 150ms ease;
@@ -132,25 +122,25 @@ a {
 }
 
 
-.btn {
+#first {
        background: #666;
-        border: 0px;
-        border-radius: 0px;
+        border: 0;
+        border-radius: 0;
         display: inline-block;
         font-size: 16px;
         font-weight: 200;
         line-height: 18px;
         opacity: 0.5;
-        padding: 0px 50px 0px 50px;
+        padding: 0;
         position: static;
         height: 30px;
-        width: 30px;
-        
-        margin-top: -45px;
-    margin-left: 30px;
+        width: 40px;
+        color: white;
+        margin-top: -55px;
+       margin-left: 20px;
 }
 
-.btn {
+#first {
 	-webkit-transition: all 150ms ease;
 	-moz-transition: all 150ms ease;
 	-ms-transition: all 150ms ease;
@@ -158,13 +148,109 @@ a {
 	transition: all 150ms ease; 
 }
 
-.btn:hover {
+#first:hover {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
         filter: alpha(opacity=50); /* IE7 */
         opacity: 0.6;
         text-decoration: none;
 }
 
-.slide{
-    position: relative;
+
+
+.fortext, .new-caption-area {
+    margin: auto;
+    color: #000;
+  }
+  
+  .carousel-caption {
+	color: #000;
+}
+
+
+
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+  background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 3em;
+  text-align: left;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 60px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 15% 0 10px 0;
+  text-align: left;
+}
+
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #fff;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }

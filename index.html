@@ -20,17 +20,17 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Сontacts</a></li>
+      <li><a href="#contacts">Сontacts</a></li>
     </ul>
   </div>
 </nav>
 <!-- Container (Heading) -->
-<div class="container-fluid" id ="heading">
+<div class="container-fluid" id="heading">
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <h1>My City</h1>
       <h3>Tell us all about your city ...</h3>
-      <button class="button button1"><a href="footer"></a>Сontacts</button>  
+      <button class="button button1"><a href="#contacts"></a>Сontacts</button>  
     </div>
     <div class="clearfix visible-xs"></div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -96,21 +96,28 @@
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/budapest.jpg" alt="Budapest" style="width:400px;height:300px;">
+      <div class="hovereffect">
+        <img class="img-responsive" src="img/budapest.jpg" alt="Budapest" style="width:400px;height:300px;">
+        <div class="overlay">
         <p><strong>Budapest</strong></p>
         <p>Yes, Budapest</p>
+        </div>
       </div>
     </div>
   </div>
 </div>    
+
+ 
+
+
+
 <!-- Container (Heading1) -->
 <div class="container-fluid" id ="heading1">
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <h1>My City History</h1>
       <h3>Some history about your city ...</h3>
-      <button class="button button1"><a href="footer"></a>Сontacts</button>  
+      <button class="button button1"><a href="#contacts"></a>Сontacts</button>  
     </div>
     <div class="clearfix visible-xs"></div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -120,58 +127,129 @@
 </div>    
     
     
+      
+    
+    
+    
     
     
     
 
-
-
-    
+ <!-- Bootstrap JS Carousel -->   
 <div class="container-fluid">
   <div class="row">
-  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-  <div id="myCarousel" class="carousel slide">
-   
-
+    <div class="fortext col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-
       <div class="item active">
         <img src="img/newylarge.jpg" alt="New York" style="width:645px;height:352px;" id="newylarge">
+          <div class="carousel-caption">
+             <h2>User name</h2>
+               <h4>New York</h4>
+                 <p>The first native New Yorkers were the Lenape, an Algonquin people who hunted, 
+                   fished and farmed in the area between the Delaware and Hudson rivers. 
+                   Europeans began to explore the region at the beginning of the 16th century–among 
+                   the first was Giovanni da Verrazzano, an Italian who sailed up and down the Atlantic 
+                   coast in search of a route to Asia–but none settled there until 1624. That year, the Dutch West India 
+                   Company sent some 30 families to live and work in a tiny settlement on “Nutten Island” 
+                   (today’s Governors Island) that they called New Amsterdam.
+                 </p>
+           </div>
       </div>
-
       <div class="item">
         <img src="img/lvivlarge.jpg" alt="Lviv" style="width:645px;height:352px;">
+         <div class="carousel-caption">
+           <h2>User name</h2>
+             <h4>Lviv</h4>
+               <P>According to the ancient chronicles Lviv was founded in 1256 by the Prince of Qalicia 
+                 and Volyn Danylo Romanovych, who named the town in honour of his son Lev. The centre of old Lviv 
+                 on the site of today's Old Rynok Square. Situated on the crossroads of trade routes, Lviv grew fast, 
+                 and soon became an important centre of commerce and crafts. Its location in the middle of Galicia-Volyn
+                 principality gave the town a considerable strategic value. In 1272 Prince Lev transferred the capital 
+                 of the principality from Qalych to Lviv.
+               </p>
+          </div>
       </div>
-  
       <div class="item">
         <img src="img/budlarge.jpg" alt="Budapest" style="width:645px;height:352px;">
+          <div class="carousel-caption">
+            <h2>User name</h2>
+              <h4>Budapest</h4>
+                 <p>The Budapest you'll see today is the result of many years of rich history, 
+                     with traces of inhabitation dating back as far as the second millennium BC. 
+                     Hungarian tribes arrived at the end of the ninth century and the Hungarian Kingdom 
+                     was established in 1000. The city as we know it today was formed through the joining of Buda, 
+                     Pest and Old Buda, back in 1873. Follow the Budapest History time line below to see the 
+                     many events leading up to the city's formation.
+                 </p>
+           </div>
       </div>
-
       <div class="item">
         <img src="img/parislarge.jpg" alt="Paris" style="width:645px;height:352px;">
+          <div class="carousel-caption">
+             <h2>User name</h2>
+                <h4>Paris</h4>
+                 <p>
+                   Paris was founded around the end of the 3rd century BC by the Gauls who were called Parisii. 
+                   In 52 BC Julius Caesar's legions conquered the territory, founding the Roman city, Lutetia on the
+                   earlier settlement. Christianity was introduced in the second century AD, while the Roman
+                   domination ended in the 5th century with the arrival of the Franks. In 508 Clovis I established
+                   Paris as the capital of the kingdom. 
+                 </p>
+           </div>
       </div>
     </div>
-
-    
-    
-    
-     <div class="control-box">
-            <a data-slide="" href="#myCarousel" class="carousel-control" id="back">First</a>                  
-            <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
-            <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
-        </div><!-- /.control-box -->
-        
-         <button type="button" class="btn" id="btn">Back to view</button>
-        
-  </div>
-</div> 
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <a href="#" class="hvr-rectangle-out">Rectangle Out</a>
-      
+      <div class="control-box">
+          <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+          <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+      </div>
+         <button type="button" class="btn" id="first">First</button> 
     </div>
+  </div> 
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+       <div class="new-caption-area"></div>
+    </div>
+  </div>
 </div>
+    
+    
+    
+    
+    <!-- Container (Contact Section) -->
+<div id="contacts" class="container-fluid">
+  <h2 class="text-center">CONTACTS</h2>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="surname" name="surname" placeholder="Surname" type="text" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
 </div>
+    
+    
+    
+    
     
  
     
