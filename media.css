@@ -2,35 +2,44 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-          
+            img.smallscreen, .newyorkes { 
+                display: none; 
+        }
+           
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-          #newyork1{
-            text-align: center;
-            margin: 0 0 0 10px;
-        }
           h1, h3 {
             text-align: left;
             margin-left: 0;
             margin-top: 30px;
             margin-bottom: 40px;
         }
-          .button{
+          .button {
             margin-left: 10px;
             margin-top: 50px;
         }
+            img.smallscreen, .newyorkes { 
+                display: none; 
+        }
+    
 }
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-           #newyork1{
-            text-align: center;
-            margin: 0 0 0 5px;
-         }
-
+            img.smallscreen, .newyorkes { 
+                display: none; 
+        }
+            .button {
+                margin-left: 15px;
+                margin-top: 10px;
+        }
+            h1 {
+                text-align: center;  
+        }     
 }
 
 
@@ -46,16 +55,27 @@
             h1{
             font-weight: 600;
         }
-           .button{
+           .button {
             padding: 5px 15px;
             text-align: center;
         }
-           .button{
+           .button {
             margin: 10px 0 10px 25px;
         }
-            .imgxs {
-                url ('../img/newyork-xs.jpg') no-repeat top center;
-            }
+            
+            img.bigscreen, .newyorkes { 
+                display: none; 
+        }
+            img.smallscreen { 
+                display: inline; 
+        }
+            #owl-demo .owl-item .hovereffect .overlay h2 {
+                font-size: 14px;
+        }
+            #owl-demo .owl-item .hovereffect .overlay p {
+                font-size: 14px;
+        }
+           
 }
 
 /* Custom, iPhone Retina */
@@ -70,13 +90,30 @@
             h1{
             font-weight: 600;
         }
-           .button{
+           .button {
             padding: 5px 15px;
             text-align: center;
         }
-           .button{
+           .button {
             margin: 10px 0 10px 98px;
-}
+        }
+            img.bigscreen, .smallscreen { 
+                display: none !important;
+        }
+            img.newyorkes { 
+                display: inline; 
+        }
+           
+            #owl-demo .owl-item .hovereffect .overlay h2 {
+                font-size: 12px;
+        }
+            #owl-demo .owl-item .hovereffect .overlay p {
+                font-size: 12px;
+        }
+            /*.carousel-inner{
+                width: 360px !important;
+            }  */      
+        
 }
 
 
@@ -92,7 +129,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-           
+          
 }
 
 /* Small Devices, Tablets */
@@ -107,9 +144,8 @@
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-         #newyork1{
-            text-align: center;
-            margin: 0 0 0 10px;
-         }
-
+            img.smallscreen, .newyorkes { 
+                display: none; 
+        }
+                
 }

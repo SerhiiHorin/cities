@@ -8,10 +8,16 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
   
-<!--  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
--->
+
+ 
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.theme.css">
+
+
+ 
+
 </head>
 <body>
 <!-- Container (Navbar) -->
@@ -40,188 +46,227 @@
 <!-- Container (Heading) -->
 <div class="container-fluid" id="heading">
   <div class="row">
-    <div class="col-xs-12 col-sm-3 col-md-5 col-lg-6" style="border:red solid 1px;">
+    <div class="col-xs-12 col-sm-3 col-md-5 col-lg-6">
       <h1>My City</h1>
       <h3>Tell us all about your city ...</h3>
      <a href="#contacts"><button class="button button1">Сontacts</button></a>  
     </div>
     <div class="clearfix visible-xs"></div>
-    <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6 imgxs" style="border:green solid 1px;">
-      <img src="img/newyork.jpg" alt="New York" style="width:625px;height:352px;" id="newyork1">
+    <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6" id="ny">
+      <img src="img/newyork.jpg" class="bigscreen" alt="New York" width="625" height="352" id="bigscreen">
+      <img src="img/newyorkxss.jpg" class="smallscreen" alt="New York" width="375" height="255" id="smallscreen">
+      <img src="img/newyorkes.jpg" class="newyorkes" alt="New York" width="320" height="200" id="newyorkes">
     </div>
   </div>
 </div>
 
-<div class="container-fluid">
-<div class="col-xs-12">
-    <div class="carousel slide" id="myCarousel">
-        <div class="carousel-inner">
-            <div class="item active">
-                    <ul class="thumbnails">
-                        <li class="col-sm-3">
-    						          <div class="fff">
-								            <div class="thumbnail hovereffect">
-									            <a href="#"><img class="img-responsive" src="img/paris.jpg" alt="Paris" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Paris</p>
-                                  </div>
-								                </div>
-								                <div class="thumbnail hovereffect">
-									             <a href="#"><img class="img-responsive" src="img/newyork1.jpg" alt="New York" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>New York</p>
-                                  </div>
-								                </div>
-                             </div>
-                          </li>
-                           <li class="col-sm-3">
-    						          <div class="fff">
-								            <div class="thumbnail hovereffect">
-									            <a href="#"><img class="img-responsive" src="img/sanfran.jpg" alt="San Francisco" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>San Francisco</p>
-                                  </div>
-								                </div>
-								                <div class="thumbnail hovereffect">
-									             <a href="#"><img class="img-responsive" src="img/lviv.jpeg" alt="Lviv" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Lviv</p>
-                                  </div>
-								                </div>
-                             </div>
-                          </li>
-                             <li class="col-sm-3">
-    						          <div class="fff">
-								            <div class="thumbnail hovereffect">
-									            <a href="#"><img class="img-responsive" src="img/venice.jpg" alt="Venice" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Venice</p>
-                                  </div>
-								                </div>
-								                <div class="thumbnail hovereffect">
-									             <a href="#"><img class="img-responsive" src="img/riodejaneiro.jpg" alt="Rio de Janeiro" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Rio de Janeiro</p>
-                                  </div>
-								                </div>
-                             </div>
-                          </li>
-                         <li class="col-sm-3">
-    						          <div class="fff">
-								            <div class="thumbnail hovereffect">
-									            <a href="#"><img class="img-responsive" src="img/budapest.jpg" alt="Budapest" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Budapest</p>
-                                  </div>
-								                </div>
-								                <div class="thumbnail hovereffect">
-									             <a href="#"><img class="img-responsive" src="img/prague.jpg" alt="Prague" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Prague</p>
-                                  </div>
-								                </div>
-                             </div>
-                          </li>
-                    </ul>
-              </div><!-- /Slide1 --> 
-            <div class="item">
-               <ul class="thumbnails">
-                        <li class="col-sm-3">
-    						          <div class="fff">
-								            <div class="thumbnail hovereffect">
-									            <a href="#"><img class="img-responsive" src="img/paris.jpg" alt="Paris" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Paris</p>
-                                  </div>
-								                </div>
-								                <div class="thumbnail hovereffect">
-									             <a href="#"><img class="img-responsive" src="img/newyork1.jpg" alt="New York" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>New York</p>
-                                  </div>
-								                </div>
-                             </div>
-                          </li>
-                           <li class="col-sm-3">
-    						          <div class="fff">
-								            <div class="thumbnail hovereffect">
-									            <a href="#"><img class="img-responsive" src="img/sanfran.jpg" alt="San Francisco" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>San Francisco</p>
-                                  </div>
-								                </div>
-								                <div class="thumbnail hovereffect">
-									             <a href="#"><img class="img-responsive" src="img/lviv.jpeg" alt="Lviv" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Lviv</p>
-                                  </div>
-								                </div>
-                             </div>
-                          </li>
-                             <li class="col-sm-3">
-    						          <div class="fff">
-								            <div class="thumbnail hovereffect">
-									            <a href="#"><img class="img-responsive" src="img/venice.jpg" alt="Venice" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Venice</p>
-                                  </div>
-								                </div>
-								                <div class="thumbnail hovereffect">
-									             <a href="#"><img class="img-responsive" src="img/riodejaneiro.jpg" alt="Rio de Janeiro" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Rio de Janeiro</p>
-                                  </div>
-								                </div>
-                             </div>
-                          </li>
-                         <li class="col-sm-3">
-    						          <div class="fff">
-								            <div class="thumbnail hovereffect">
-									            <a href="#"><img class="img-responsive" src="img/budapest.jpg" alt="Budapest" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Budapest</p>
-                                  </div>
-								                </div>
-								                <div class="thumbnail hovereffect">
-									             <a href="#"><img class="img-responsive" src="img/prague.jpg" alt="Prague" style="width:360px;height:240px;"></a>
-							                 <div class="overlay">
-                                  <p><strong>User name</strong></p>
-                                    <p>Prague</p>
-                                  </div>
-								                </div>
-                             </div>
-                          </li>
-                    </ul>
-              </div><!-- /Slide2 --> 
-        </div>
-	   <nav>
-			<ul class="control-box pager">
-				<li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
-				<li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></li>
-			</ul>
-		</nav>
-	   <!-- /.control-box -->   
-  </div><!-- /#myCarousel -->
-        
-</div><!-- /.col-xs-12 -->          
+ <div id="owl-demo" class="owl-carousel owl-theme">
+    <div>
+      <div class="hovereffect">
+        <img src="img/paris.jpg" alt="Paris" width="360" height="240"/>
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Paris</p>
+          </div>
+      </div>
+      <div class="hovereffect">
+        <img src="img/newyork1.jpg" alt="New York" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>New York</p>
+          </div>
+      </div>  
+    </div>
+    <div>
+      <div class="hovereffect">
+        <img src="img/sanfran.jpg" alt="San Francisco" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>San Francisco</p>
+          </div>
+      </div>  
+      <div class="hovereffect">
+        <img src="img/lviv.jpeg" alt="Lviv" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Lviv</p>
+          </div>
+      </div>   
+    </div>
+    <div>
+      <div class="hovereffect">
+        <img src="img/venice.jpg" alt="Venice" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Venice</p>
+          </div>
+      </div>  
+      <div class="hovereffect">
+        <img src="img/riodejaneiro.jpg" alt="Rio de Janeiro" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Rio de Janeiro</p>
+          </div>
+      </div>    
+    </div>
+    <div>
+      <div class="hovereffect">
+        <img src="img/budapest.jpg" alt="Budapest" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Budapest</p>
+          </div>
+      </div> 
+      <div class="hovereffect">
+        <img src="img/prague.jpg" alt="Prague" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Prague</p>
+          </div>
+      </div>  
+    </div>
+    <div>
+      <div class="hovereffect">
+        <img src="img/paris.jpg" alt="Paris" width="360" height="240"/>
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Paris</p>
+          </div>
+      </div>
+      <div class="hovereffect">
+        <img src="img/newyork1.jpg" alt="New York" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>New York</p>
+          </div>
+      </div>  
+    </div>
+    <div>
+      <div class="hovereffect">
+        <img src="img/sanfran.jpg" alt="San Francisco" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>San Francisco</p>
+          </div>
+      </div>  
+      <div class="hovereffect">
+        <img src="img/lviv.jpeg" alt="Lviv" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Lviv</p>
+          </div>
+      </div>   
+    </div>
+    <div>
+      <div class="hovereffect">
+        <img src="img/venice.jpg" alt="Venice" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Venice</p>
+          </div>
+      </div>  
+      <div class="hovereffect">
+        <img src="img/riodejaneiro.jpg" alt="Rio de Janeiro" width="360" height="240">
+          <div class="overlay">
+           <h2>User name</h2>
+           <p>Rio de Janeiro</p>
+          </div>
+      </div>    
+    </div>
+ </div>
 
-</div><!-- /.container -->
+  <!-- Container (Contact Section) -->
+    
+<div id="contacts" class="container-fluid">
+  <h2 class="text-center">CONTACTS</h2>
+  
+  <div class="row">
+    <div class="col-xs-1 col-sm-1 col-md-2 col-lg-1"></div>
+    <div id="all">
+   <form> 
+    <div class="col-xs-7 col-sm-7 col-md-5 col-lg-7 slideanim sing">
+      
+      <p id="sing">Sign Up</p>
+      <div class="row">
         
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+          
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+          <input class="form-control" id="surname" name="surname" placeholder="Surname" type="text" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+       </div>     
+      </div>
+        <div class="row btnForm">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+          <button class="btn btn-default btn-lg" type="submit">Send</button>
+        
+         </div>
+       </div>
+
+     
+    </div>
+     </form>
+       <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 linksAtForm">
+        
+        <div>
+        <p>My City</p>
+        <p>Tell us all about your city ...</p>
+        <br><br><br>
+        <p>My City History</p>
+        <p>Some history about your city ...</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-xs-1 col-sm-1 col-md-2 col-lg-1"></div>
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     
+  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
         
         
 <!-- Container (Heading1) -->
@@ -328,57 +373,22 @@
   -->  
     
     
-    <!-- Container (Contact Section) -->
-    
-<div id="contacts" class="container-fluid">
-  <h2 class="text-center">CONTACTS</h2>
+   
   
-  <div class="row">
-    <div class="col-sm-2"></div>
-    
-    <div class="col-sm-5 slideanim sing">
-      <p id="sing">Sign Up</p>
-      <div class="row">
-        
-        <div class="col-sm-6 form-group">
-          
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="surname" name="surname" placeholder="Surname" type="text" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3 sing">
-      <div class="col-sm-4 pad"></div>
-      <div class="col-sm-8 pad">
-      <p>My City</p>
-      <p>Tell us all about your city ...</p>
-      <br><br><br>
-      <p>My City History</p>
-      <p>Some history about your city ...</p>
-      </div>
-    </div>
-    <div class="col-sm-2"></div>
-  </div>
-</div>
   
 
 
+ 
 
-<script type="text/javascript"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-<!-- 
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- -->
-  <script src="myjs.js"></script>
+ 
+
+
+<script src="jquery-3.1.0.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="myjs.js"></script>
+  
 </body>
 </html>
 
