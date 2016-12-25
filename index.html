@@ -20,7 +20,34 @@
 
 </head>
 <body id="myCity" data-spy="scroll" data-target=".navbar" data-offset="60">
-<!-- Container (Navbar) -->
+  
+ <!-- Container (NavbarSecond) -->
+<div class="navSecond"  id="navSecond">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <a class="navbar-brand" href="#myCity">My City</a>
+      </div>
+      <div id="navbar1" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#heading1">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Message</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+</div>   
+  
+  
+<!-- Container (NavbarFist) -->
+<div class="navFirst"  id="navFirst">
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -41,7 +68,7 @@
       </div>
     </div>
 </nav>
-
+</div>
 
 <!-- Container (Heading) -->
 <div class="container-fluid" id="heading">
@@ -60,7 +87,7 @@
   </div>
 </div>
 
- <div id="owl-demo" class="owl-carousel owl-theme slideanim slide">
+ <div id="owl-demo" class="owl-carousel owl-theme slideanim">
     <div>
       <div class="hovereffect">
         <img src="img/paris.jpg" alt="Paris" width="360" height="240"/>
@@ -177,7 +204,7 @@
 
   <!-- Container (Contact Section) -->
     
-<div id="contacts" class="container-fluid slideanim slide">
+<div id="contacts" class="container-fluid slideanim">
   <h2 class="text-center">CONTACTS</h2>
     <div class="row borderFormFirst">
       <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -205,7 +232,7 @@
               </div>
           </div>
         </form>
-          <div class="row slideanim slide">
+          <div class="row">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 linksAtForm">
               <div>
                 <p>My City</p>
@@ -221,54 +248,18 @@
     </div>
   </div>
   
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-     
-     
-  
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-        
+ 
+   
         
 <!-- Container (Heading1) -->
 <div class="container-fluid" id ="heading1">
-  <div class="row slideanim slide">
+  <div class="row slideanim">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <h1>My City History</h1>
       <h3>Some history about your city ...</h3>
-      
      <a class="button button1" href="#contacts">Сontacts</a>
-    
     </div>
     <div class="clearfix visible-xs"></div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -279,19 +270,157 @@
     
     
       
-    
-    
-    
-    
-    
-<!--    
+<div class="container-fluid">
+   <div class="row">
+        <div id="main_area" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="span12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="span8 col-xs-7 col-sm-7 col-md-7 col-lg-7" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                        <img src="//placehold.it/770x300&text=one"></div>
 
+                                        <div class="item" data-slide-number="1">
+                                        <img src="//placehold.it/770x300&text=two"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                        <img src="//placehold.it/770x300&text=three"></div>
+
+                                        <div class="item" data-slide-number="3">
+                                        <img src="//placehold.it/770x300&text=four"></div>
+
+                                        <div class="item" data-slide-number="4">
+                                        <img src="//placehold.it/770x300&text=five"></div>
+
+                                        <div class="item" data-slide-number="5">
+                                        <img src="//placehold.it/770x300&text=six"></div>
+                                    </div><!-- Carousel nav -->
+                                    <a class="carousel-control left" data-slide="prev" href="#myCarousel">‹</a> <a class="carousel-control right" data-slide="next" href="#myCarousel">›</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div> 
+                        </div> 
+ <div class="row">
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                            <div class="span4" id="carousel-text"></div>
+
+                            <div id="slide-content" style="display: none;">
+                                <div id="slide-content-0">
+                                    <h2>Slider One</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-1">
+                                    <h2>Slider Two</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-2">
+                                    <h2>Slider Three</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-3">
+                                    <h2>Slider Four</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-4">
+                                    <h2>Slider Five</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-5">
+                                    <h2>Slider Six</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                </div>
+                            </div>
+                        
+                    
+                <!--/Slider-->
+
+                <div class="row hidden-phone" id="slider-thumbs">
+                    <div class="span12">
+                        <!-- Bottom switcher of slider -->
+
+                        <ul class="thumbnails">
+                            <li class="span2">
+                                <a class="thumbnail" id="carousel-selector-0"><img src="//placehold.it/170x100&text=one"></a>
+                            </li>
+
+                            <li class="span2">
+                                <a class="thumbnail" id="carousel-selector-1"><img src="//placehold.it/170x100&text=two"></a>
+                            </li>
+
+                            <li class="span2">
+                                <a class="thumbnail" id="carousel-selector-2"><img src="//placehold.it/170x100&text=three"></a>
+                            </li>
+
+                            <li class="span2">
+                                <a class="thumbnail" id="carousel-selector-3"><img src="//placehold.it/170x100&text=four"></a>
+                            </li>
+
+                            <li class="span2">
+                                <a class="thumbnail" id="carousel-selector-4"><img src="//placehold.it/170x100&text=five"></a>
+                            </li>
+
+                            <li class="span2">
+                                <a class="thumbnail" id="carousel-selector-5"><img src="//placehold.it/170x100&text=six"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div>      
+       
+    </div>
+</div>    
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+    
+    
+    
+   
+<!--
    
 <div class="container-fluid">
   <div class="row">
     <div class="fortext col-xs-6 col-sm-6 col-md-6 col-lg-6">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    // Wrapper for slides 
+   
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <img src="img/newylarge.jpg" alt="New York" style="width:645px;height:352px;" id="newylarge">
@@ -363,7 +492,7 @@
     </div>
   </div>
 </div>
-  -->  
+   -->
     
     
    
