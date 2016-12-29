@@ -5,7 +5,12 @@
             img.smallscreen, .newyorkes { 
                 display: none; 
         }
-           
+             #sliderCarousel {
+                display: block;
+            }
+            #bigSlade {
+                display: block;
+            }
 
 }
 
@@ -24,6 +29,13 @@
             img.smallscreen, .newyorkes { 
                 display: none; 
         }
+            #sliderCarousel {
+                display: block;
+            }
+            #bigSlade {
+                display: block;
+            }
+        
     
 }
 
@@ -42,6 +54,14 @@
             h1 {
                 text-align: center;  
         }     
+            #sliderCarousel {
+                display: none !important;
+            }
+            #bigSlade {
+                display: none !important;
+            }
+            
+            
 }
 
 
@@ -77,7 +97,13 @@
             #owl-demo .owl-item .hovereffect .overlay p {
                 font-size: 14px;
         }
-           
+            #sliderCarousel {
+                display: none !important;
+            }
+            #bigSlade {
+                display: none !important;
+            }
+            
 }
 
 /* Custom, iPhone Retina */
@@ -115,7 +141,13 @@
             /*.carousel-inner{
                 width: 360px !important;
             }  */      
-        
+            #sliderCarousel {
+                display: none !important;
+            }
+            #bigSlade {
+                display: none !important;
+            }
+            
 }
 
 

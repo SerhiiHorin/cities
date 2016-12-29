@@ -272,6 +272,7 @@ transition-delay:.2s;
 
 #photography {
   max-width: 100%;
+  height: auto;
 }
 
 
@@ -418,4 +419,35 @@ a {
 	color: #000;
 }
 
-*/
+ */
+
+/* 
+.hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
+
+#bootstrapCarousel {
+    padding-bottom: 200px;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+   */
+#sliderCarousel {
+    padding-bottom: 200px;
+}
+
+.newysmall, .lvivsmall, .budsmall, .parissmall,  .newylarge, .lvivlarge, .budlarge, .parislarge {
+    max-width: 100%;
+    height: auto;
+}
+
+#slideText {
+    text-align: justify;
+}
+  

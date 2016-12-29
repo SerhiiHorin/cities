@@ -15,7 +15,13 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.theme.css">
 
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
  
 
 </head>
@@ -90,7 +96,7 @@
  <div id="owl-demo" class="owl-carousel owl-theme slideanim">
     <div>
       <div class="hovereffect">
-        <img src="img/paris.jpg" alt="Paris" width="360" height="240"/>
+        <img src="img/paris.jpg" alt="Paris" width="360" height="240">
           <div class="overlay">
            <h2>User name</h2>
            <p>Paris</p>
@@ -268,20 +274,37 @@
   </div>
 </div>    
     
+
     
-      
-<div class="container-fluid">
-   <div class="row">
-        <div id="main_area" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <!-- Slider -->
+<!--    
+    
+<div class="container">
+        <div id="main_area">
+                 Slider 
                 <div class="row">
-                    <div class="span12" id="slider">
-                        <!-- Top part of the slider -->
+                    <div class="col-xs-12" id="slider">
+                         Top part of the slider 
                         <div class="row">
-                            <div class="span8 col-xs-7 col-sm-7 col-md-7 col-lg-7" id="carousel-bounding-box">
-                                <div class="carousel slide" id="myCarousel">
-                                    <!-- Carousel items -->
-                                    <div class="carousel-inner">
+                            
+
+                            
+                        </div>
+                    </div>
+                </div>Slider-
+
+                
+        </div>
+</div>
+
+<div class="container-fluid" id="bootstrapCarousel">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border: solid 1px red; min-height: 200px">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="border: solid 1px blue; min-height: 200px">
+          <div id="carousel-bounding-box">
+            <div class="carousel slide" id="myCarousel">
+              -- Carousel items --
+                                        <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
                                         <img src="//placehold.it/770x300&text=one"></div>
 
@@ -299,118 +322,237 @@
 
                                         <div class="item" data-slide-number="5">
                                         <img src="//placehold.it/770x300&text=six"></div>
-                                    </div><!-- Carousel nav -->
-                                    <a class="carousel-control left" data-slide="prev" href="#myCarousel">‹</a> <a class="carousel-control right" data-slide="next" href="#myCarousel">›</a>
-                                </div>
-                            </div>
-                          </div>
-                        </div> 
-                        </div> 
- <div class="row">
-    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                            <div class="span4" id="carousel-text"></div>
+                                    </div> Carousel nav 
+                                    <a class="" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>                                       
+                                    </a>
+                                    <a class="" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>                                       
+                                    </a>                                
+                </div>
+              </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="border: solid 1px yellow; min-height: 200px">
+        <div class="row">
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border: solid 1px red; height: 100px">
+             <div class="" id="carousel-text"></div>
 
                             <div id="slide-content" style="display: none;">
                                 <div id="slide-content-0">
                                     <h2>Slider One</h2>
                                     <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                    
                                 </div>
 
                                 <div id="slide-content-1">
                                     <h2>Slider Two</h2>
                                     <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                    
                                 </div>
 
                                 <div id="slide-content-2">
                                     <h2>Slider Three</h2>
                                     <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                    
                                 </div>
 
                                 <div id="slide-content-3">
                                     <h2>Slider Four</h2>
                                     <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                    
                                 </div>
 
                                 <div id="slide-content-4">
                                     <h2>Slider Five</h2>
                                     <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                    
                                 </div>
 
                                 <div id="slide-content-5">
                                     <h2>Slider Six</h2>
                                     <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+                                    
                                 </div>
                             </div>
-                        
-                    
-                <!--/Slider-->
-
-                <div class="row hidden-phone" id="slider-thumbs">
-                    <div class="span12">
-                        <!-- Bottom switcher of slider -->
-
-                        <ul class="thumbnails">
-                            <li class="span2">
+           </div>
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border: solid 1px green; height: 100px">
+             <div class="row hidden-xs" id="slider-thumbs">
+                         Bottom switcher of slider 
+                        <ul class="hide-bullets">
+                            <li class="col-sm-2">
                                 <a class="thumbnail" id="carousel-selector-0"><img src="//placehold.it/170x100&text=one"></a>
                             </li>
 
-                            <li class="span2">
+                            <li class="">
                                 <a class="thumbnail" id="carousel-selector-1"><img src="//placehold.it/170x100&text=two"></a>
                             </li>
 
-                            <li class="span2">
+                            <li class="">
                                 <a class="thumbnail" id="carousel-selector-2"><img src="//placehold.it/170x100&text=three"></a>
                             </li>
 
-                            <li class="span2">
+                            <li class="">
                                 <a class="thumbnail" id="carousel-selector-3"><img src="//placehold.it/170x100&text=four"></a>
                             </li>
 
-                            <li class="span2">
+                            <li class="">
                                 <a class="thumbnail" id="carousel-selector-4"><img src="//placehold.it/170x100&text=five"></a>
                             </li>
 
-                            <li class="span2">
+                            <li class="">
                                 <a class="thumbnail" id="carousel-selector-5"><img src="//placehold.it/170x100&text=six"></a>
                             </li>
-                        </ul>
-                    </div>
+                        </ul>                 
                 </div>
+             
+           </div>
+        </div>
+      </div>
+    </div> 
+</div>
+</div>
+</div>
+-->
+
+
+
+				
+				
+
+<div class="container-fluid" id="sliderCarousel" style='background-color:white'>
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="slider slider-for" id="bigSlade">
+					<div><img src="image/newylarge.jpg" alt="New York" width="645" height="352" class="newylarge"></div>
+					<div><img src="image/lvivlarge.jpg" alt="Lviv" width="645" height="352" class="lvivlarge"></div>
+					<div><img src="image/budlarge.jpg" alt="Budapest" width="645" height="352" class="budlarge"></div>
+					<div><img src="image/parislarge.jpg" alt="Paris" width="645" height="352" class="parislarge"></div>
+					
+				</div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="row">
+            <div class=" col-md-12 col-lg-12">
+               <div class="slider slider-for" id="slideText">
+					     <div><h2>User name</h2>
+                 <h4>New York</h4>
+                 <p>The first native New Yorkers were the Lenape, an Algonquin people who hunted, 
+                   fished and farmed in the area between the Delaware and Hudson rivers. 
+                   Europeans began to explore the region at the beginning of the 16th century–among 
+                   the first was Giovanni da Verrazzano, an Italian who sailed up and down the Atlantic 
+                   coast in search of a route to Asia–but none settled there until 1624. That year, the Dutch West India 
+                   Company sent some 30 families to live and work in a tiny settlement on “Nutten Island” 
+                   (today’s Governors Island) that they called New Amsterdam.
+                 </p></div>
+					  <div><h2>User name</h2>
+             <h4>Lviv</h4>
+               <P>According to the ancient chronicles Lviv was founded in 1256 by the Prince of Qalicia 
+                 and Volyn Danylo Romanovych, who named the town in honour of his son Lev. The centre of old Lviv 
+                 on the site of today's Old Rynok Square. Situated on the crossroads of trade routes, Lviv grew fast, 
+                 and soon became an important centre of commerce and crafts. Its location in the middle of Galicia-Volyn
+                 principality gave the town a considerable strategic value. In 1272 Prince Lev transferred the capital 
+                 of the principality from Qalych to Lviv.
+               </p></div>
+					<div><h2>User name</h2>
+              <h4>Budapest</h4>
+                 <p>The Budapest you'll see today is the result of many years of rich history, 
+                     with traces of inhabitation dating back as far as the second millennium BC. 
+                     Hungarian tribes arrived at the end of the ninth century and the Hungarian Kingdom 
+                     was established in 1000. The city as we know it today was formed through the joining of Buda, 
+                     Pest and Old Buda, back in 1873. Follow the Budapest History time line below to see the 
+                     many events leading up to the city's formation.
+                 </p></div>
+					<div><h2>User name</h2>
+                <h4>Paris</h4>
+                 <p>
+                   Paris was founded around the end of the 3rd century BC by the Gauls who were called Parisii. 
+                   In 52 BC Julius Caesar's legions conquered the territory, founding the Roman city, Lutetia on the
+                   earlier settlement. Christianity was introduced in the second century AD, while the Roman
+                   domination ended in the 5th century with the arrival of the Franks. In 508 Clovis I established
+                   Paris as the capital of the kingdom. 
+                 </p></div>
+					
+					</div>
+
+                           
             </div>
-         </div>
-        </div>      
-       
-    </div>
-</div>    
+            <div class="col-sm-12 col-md-12 col-lg-12">
+               <div class="slider slider-nav">
+					<div><img src="image/newysmall.jpg" alt="New York" width="320" height="210" class="newysmall"></div>
+					<div><img src="image/lvivsmall.jpg" alt="Lviv" width="320" height="210" class="lvivsmall"></div>
+					<div><img src="image/budsmall.jpg" alt="Budapest" width="320" height="210" class="budsmall"></div>
+					<div><img src="image/parissmall.jpg" alt="Paris" width="320" height="210" class="parissmall"></div>
+					
+					</div>
+             
+            </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  </div>
+</div>   
+   
     
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-
-
-
-
-
-
-
-
-    
+  <div class="container-fluid" id="slick768" style='background-color:grey'>
+  <div class="row">
+    <div class=" col-sm-12">
+      
+          <div class="slider slider-forr" id="">
+					     <div><h2>User name</h2>
+                 <h4>New York</h4>
+                 <p>The first native New Yorkers were the Lenape, an Algonquin people who hunted, 
+                   fished and farmed in the area between the Delaware and Hudson rivers. 
+                   Europeans began to explore the region at the beginning of the 16th century–among 
+                   the first was Giovanni da Verrazzano, an Italian who sailed up and down the Atlantic 
+                   coast in search of a route to Asia–but none settled there until 1624. That year, the Dutch West India 
+                   Company sent some 30 families to live and work in a tiny settlement on “Nutten Island” 
+                   (today’s Governors Island) that they called New Amsterdam.
+                 </p></div>
+					  <div><h2>User name</h2>
+             <h4>Lviv</h4>
+               <P>According to the ancient chronicles Lviv was founded in 1256 by the Prince of Qalicia 
+                 and Volyn Danylo Romanovych, who named the town in honour of his son Lev. The centre of old Lviv 
+                 on the site of today's Old Rynok Square. Situated on the crossroads of trade routes, Lviv grew fast, 
+                 and soon became an important centre of commerce and crafts. Its location in the middle of Galicia-Volyn
+                 principality gave the town a considerable strategic value. In 1272 Prince Lev transferred the capital 
+                 of the principality from Qalych to Lviv.
+               </p></div>
+					<div><h2>User name</h2>
+              <h4>Budapest</h4>
+                 <p>The Budapest you'll see today is the result of many years of rich history, 
+                     with traces of inhabitation dating back as far as the second millennium BC. 
+                     Hungarian tribes arrived at the end of the ninth century and the Hungarian Kingdom 
+                     was established in 1000. The city as we know it today was formed through the joining of Buda, 
+                     Pest and Old Buda, back in 1873. Follow the Budapest History time line below to see the 
+                     many events leading up to the city's formation.
+                 </p></div>
+					<div><h2>User name</h2>
+                <h4>Paris</h4>
+                 <p>
+                   Paris was founded around the end of the 3rd century BC by the Gauls who were called Parisii. 
+                   In 52 BC Julius Caesar's legions conquered the territory, founding the Roman city, Lutetia on the
+                   earlier settlement. Christianity was introduced in the second century AD, while the Roman
+                   domination ended in the 5th century with the arrival of the Franks. In 508 Clovis I established
+                   Paris as the capital of the kingdom. 
+                 </p></div>
+					
+					</div>
+             <div class="slider slider-navv" id="">
+					  <div><img src="image/newylarge.jpg" alt="New York" width="645" height="352" class="newylarge"></div>
+					   <div><img src="image/lvivlarge.jpg" alt="Lviv" width="645" height="352" class="lvivlarge"></div>
+					   <div><img src="image/budlarge.jpg" alt="Budapest" width="645" height="352" class="budlarge"></div>
+					   <div><img src="image/parislarge.jpg" alt="Paris" width="645" height="352" class="parislarge"></div>
+					
+				   </div>
+                           
+            </div>
+            
+        </div>
+      </div>
+  
     
     
    
@@ -494,8 +636,7 @@
 </div>
    -->
     
-    
-   
+ 
   
   
 
@@ -507,10 +648,24 @@
 
 <script src="jquery-3.1.0.min.js"></script>
 
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="myjs.js"></script>
-  
+<script type="text/javascript" src="myslick.js"></script>
+
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+ 
+
+ 
+
+
 </body>
 </html>
 
