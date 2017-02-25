@@ -7,11 +7,12 @@
     $("#owl-demo").owlCarousel({
         
         itemsCustom : [
-        [0, 2],
-        [450, 2],
+        [0, 1],
+        [375, 1],
+        [425, 2],
         [600, 3],
         [700, 3],
-        [1000, 4],
+        [1000, 3],
         [1200, 4],
         [1400, 5],
         [1600, 7]
@@ -34,7 +35,7 @@
 
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, #heading a, #heading1 a, footer a[href='#myCity']").on('click', function(event) {
+  $(".navbar a, #heading a, #heading1 a, #myCity a, footer a[href='#myCity']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -67,41 +68,23 @@ $(document).ready(function(){
   });
 })
 
-/*
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#navFirst');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navFirst").removeClass("navSecond");
-       }
-   });
-    } 
-});
 
-*/
 
-// enquire.register("screen and (min-width : 1200px)", function() { }, true);
-/*    
-   if(window.matchMedia('(max-width: 768px)').matches)
-{
-    $('.sub-menu-button').on('click',function(e)
+
+if(window.matchMedia('(max-width: 1366px)').matches)
     {
-        var subMenu = $(this).next('.sub-navigation');
-        if(subMenu.is(':visible'))
-        {
-            subMenu.slideUp();
-        } else {
-            subMenu.slideDown();
-        }
-         
-        return false;
+    $(window).scroll(function(){
+      if($(window).scrollTop() < 1700){
+          $('#navSecond').css('display','none');
+          $('#navFirst').css('display','block');
+       } else{
+          $('#navSecond').css('display','block');
+          $('#navFirst').css('display','none');
+       }
+ 
+       return false;
     });
-} 
-*/
+}  
 
 if(window.matchMedia('(max-width: 1200px)').matches)
     {
@@ -169,7 +152,7 @@ if(window.matchMedia('(max-width: 992px)').matches)
 if(window.matchMedia('(max-width : 320px)').matches)
     {
     $(window).scroll(function(){
-      if($(window).scrollTop() < 700){
+      if($(window).scrollTop() < 1465){
           $('#navSecond').css('display','none');
           $('#navFirst').css('display','block');
        } else{
@@ -181,94 +164,159 @@ if(window.matchMedia('(max-width : 320px)').matches)
     });
 }  
   
- /*
- $(document).on("scroll",function(){
-    if($(document).scrollTop()>500){
-        $("myCity").removeClass("navSecond").addClass("navFirst");
-    } else{
-        $("myCity").removeClass("navFirst").addClass("navSecond");
-    }
-});
 
-*/
- /*
-  jQuery(document).ready(function($) {
+
+
  
-        $('#myCarousel').carousel({
-                interval: 5000
-        });
- 
-        $('#carousel-text').html($('#slide-content-0').html());
- 
-        //Handles the carousel thumbnails
-       $('[id^=carousel-selector-]').click( function(){
-            var id = this.id.substr(this.id.lastIndexOf("-") + 1);
-            var id = parseInt(id);
-            $('#myCarousel').carousel(id);
-        });
- 
- 
-        // When the carousel slides, auto update the text
-        $('#myCarousel').on('slid.bs.carousel', function (e) {
-                 var id = $('.item.active').data('slide-number');
-                $('#carousel-text').html($('#slide-content-'+id).html());
-        });
-});
-
-*/
-
-
-
-
-
- /*
-$(document).ready(function(){
-    // Activate Carousel
-    $("#myCarousel").carousel({interval: 5000});
+ $(document).ready(function() {
+  $('#contact-form').submit(function(e) {
+      var name = $('#name')
+      var surname = $('#surname')
+      var message = $('#message')
     
-    // Enable Carousel Indicators
-    $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
+      if (name.val() == "") {
+        $('.name-fail').fadeToggle(600);
+        return false;
+      }
+      
+      else if (surname.val() == "") {
+        $('.surname-fail').fadeToggle(600);
+        return false;
+      }
+      else if (message.val() == "") {
+        $('.submit-fail').fadeToggle(600);
+        return false;
+      }
+      
+       else {
+        $.ajax({
+          method: 'POST',
+          url: '//formspree.io/gorin.sergij@gmail.com',
+          data: $('#contact-form').serialize(),
+          datatype: 'json'
+        });
+        e.preventDefault();
+        $(this).get(0).reset();
+        $('.submit-success').fadeToggle(600);
+        $('.hideMessage').show();
+        $('html, body').animate({
+         scrollTop: $(".submit-success").offset().top
+    }, 2000);
+    return false;
+        
+      }
     });
-    $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
-    });
-    $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
-    });
-    $(".item4").click(function(){
-        $("#myCarousel").carousel(3);
-    });
-    
-    // Enable Carousel Controls
-    $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
-    });
-    $(".right").click(function(){
-        $("#myCarousel").carousel("next");
-    });
-
-    $(".btn").click(function(){
-        $("#myCarousel").carousel(0);
-    });  
-});
-
-
-
-
-
-   
-   jQuery(function ($) {
-    $('.carousel').carousel();
-    var caption = $('div.item:nth-child(1) .carousel-caption');
-    $('.new-caption-area').html(caption.html());
-    caption.css('display', 'none');
-
-    $(".carousel").on('slide.bs.carousel', function (evt) {
-        var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
-        $('.new-caption-area').html(caption.html());
-        caption.css('display', 'none');
-    });
+  
+  $('.submit-fail, .name-fail, .surname-fail, .submit-success').click(function() {
+    $(this).hide(600);
+  })
+  
+   $('.submit-success').click(function() {
+    $('.hideMessage').hide(600);
+  })
+  
+ $('#name').click(function() {
+    $('.name-fail').hide(600);
+  })
+  
+  $('#surname').click(function() {
+    $('.surname-fail').hide(600);
+  })
+  
+   $('#message').click(function() {
+    $('.submit-fail').hide(600);
+  })
+  
+  
 });
   
- */  
+ 
+ /*
+ $(document).ready(function(){ 
+   $(function() {
+    if($(window).width() >= 1920) {
+    $("#bigSlade").append("#largesl");
+     $("#mediumsl").remove();
+    }
+   });
+ });
+   $(document).ready(function(){ 
+    $(function() {
+     if($(window).width() < 1920) {
+    $("#bigSlade").append("#mediumsl");
+     $("#largesl").remove();
+    }
+   });
+   });
+
+ */ 
+ /*
+   if(window.matchMedia('(max-width: 1920px)').matches) {
+    
+   
+      if($(window).width() >= 1920){
+          $('.budlargexl').css('display','none');
+          $('.budlarge').css('display','block');
+       } else {
+          $('.budlarge').css('display','block');
+          $('.budlargexl').css('display','none');
+       }
+ 
+}  
+ */
+   
+/*  
+$(function() {
+  if($(window).width() >= 1920) {
+    $("img").each(function() {
+      $(this).attr("src", $(this).attr("src").replace("image/645*352/", "image/960*395/"));
+    });
+  }
+});
+
+
+var $window = $(window),
+    $budlarge = $('.budlarge');
+    $budlargexl = $('.budlargexl');
+
+function resize() {
+    if ($window.width() < 1920) {
+        $budlargexl.hide()
+        $budlarge.show()
+    } else if ($window.width() >= 1920) {
+        $budlargexl.show()
+        $budlarge.hide()
+    }
+}
+*/
+/* 
+var imageBgs = document.querySelectorAll('[data-bg]');
+var screenWidth = window.innerWidth;
+
+for(var i=0; i<imageBgs.length; i++) {
+    if( screenWidth < 1024 ){
+        // Load mobile image
+        imageBgs[i].style.backgroundImage = 'url('+imageBgs[i].getAttribute('data-bg-img-mobile')+')';
+    } else if( screenWidth >= 1024 && screenWidth <= 1366 ) {
+        // Ipad
+        imageBgs[i].style.backgroundImage = 'url('+imageBgs[i].getAttribute('data-bg-img-tablet')+')';
+    } else {
+        // desktop image
+        imageBgs[i].style.backgroundImage = 'url('+imageBgs[i].getAttribute('data-bg-img-desktop')+')';
+    }
+}
+
+*/
+/*
+var $window = $(window),
+    $img = $('#bigSlade');
+
+function resize() {
+    if ($window.width() < 1920) {
+        $img.attr('src', 'image/645*352/budlarge.jpg');
+    }
+    else if ($window.width() > 1920) {
+        $img.attr('src', 'image/960*395/budapest-xl.jpg');
+    }
+}
+*/

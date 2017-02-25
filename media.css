@@ -11,7 +11,7 @@
             #bigSlade {
                 display: block;
             }
-
+             
 }
 
 /* Medium Devices, Desktops */
@@ -33,9 +33,9 @@
                 display: block;
             }
             #bigSlade {
-                display: block;
+                display: none !important;
             }
-        
+           
     
 }
 
@@ -54,14 +54,17 @@
             h1 {
                 text-align: center;  
         }     
-            #sliderCarousel {
-                display: none !important;
-            }
             #bigSlade {
                 display: none !important;
             }
-            
-            
+            .back-to-view {
+                 display: none;
+             } 
+             
+             .vdivide a {
+            padding-left: 10px;
+            padding-right: 10px; 
+             }
 }
 
 
@@ -97,33 +100,57 @@
             #owl-demo .owl-item .hovereffect .overlay p {
                 font-size: 14px;
         }
-            #sliderCarousel {
-                display: none !important;
-            }
+            
             #bigSlade {
                 display: none !important;
             }
+            .back-to-view {
+                 display: none;
+             } 
+             
             
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-            h1, h3 {
+           #heading h1 {
             text-align: left;
             margin-left: 0;
-            margin-top: 5px;
+            margin-top: 15px;
             margin-bottom: 5px;
             font-size: 16px;
         }
-            h1{
+            #heading h3 {
+            text-align: left;
+            margin-left: 0;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+            #heading1 h1 {
+            text-align: left;
+            margin-left: 0;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+            #heading1 h3 {
+            text-align: left;
+            margin-left: 0;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+            
+            h1 {
             font-weight: 600;
         }
            .button {
-            padding: 5px 15px;
+            padding: 7px 75px;
             text-align: center;
         }
            .button {
-            margin: 10px 0 10px 98px;
+            margin: 30px 0 30px 38px;
         }
             img.bigscreen, .smallscreen { 
                 display: none !important;
@@ -133,23 +160,80 @@
         }
            
             #owl-demo .owl-item .hovereffect .overlay h2 {
-                font-size: 12px;
+                font-size: 14px;
         }
             #owl-demo .owl-item .hovereffect .overlay p {
-                font-size: 12px;
+                font-size: 14px;
         }
-            /*.carousel-inner{
-                width: 360px !important;
-            }  */      
-            #sliderCarousel {
-                display: none !important;
-            }
+                 
+            
             #bigSlade {
                 display: none !important;
             }
-            
-}
+            .slick-slide p {
+                   font-size: 13px;
+           }
+           #heading {
+            margin-bottom: 30px;
+            padding-top: 80px;
+             } 
+             
+             .owl-next, .owl-prev {
+                 display: none !important;
+             }
+             #owl-demo {
+            padding: 60px 0 10px 0;
+                 
+             }
+             .owl-page {
+                 margin: 0 7px 0 7px ;
+             }
+            .formlinks {
+                display: none;
+            }
+            #sing {
+           margin: 20px 0 20px 0;
+           padding: 0 120px 0 0;
+              }
+              .sing {
+             padding: 0; 
+             border-right: none; 
+             } 
+            .borderForm {
+            margin: 0 13px 0 -5px;
+            }
+            #contacts {
+             padding-top: 50px;
+            margin-top: 0px;  
+            padding-bottom: 40px;
 
+           }
+           h2 {
+            font-size: 22px;
+            }
+            .buttonForm {
+                padding: 7px 75px;
+            text-align: center;
+            }
+            
+            #heading1 {
+                margin-bottom: 10px;
+                padding-top: 30px;
+                padding-bottom: 20px;
+            }
+            #slideText {
+            margin-top: 40px;
+               }
+               
+               .back-to-view {
+                 display: none;
+             } 
+             
+             .vdivide a {
+            padding-left: 7px;
+            padding-right: 7px; 
+             }
+}
 
 
 
@@ -173,7 +257,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-         
+         .two p span {
+                 display: none;
+             }
 }
 
  /* Large Devices, Wide Screens */
@@ -181,5 +267,189 @@
             img.smallscreen, .newyorkes { 
                 display: none; 
         }
-                
+           .two p span {
+                 display: inline;
+             }   
 }
+
+
+
+
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+ 
+
+}
+
+
+
+
+@media  screen and (min-width: 1920px) {
+
+ .newylarge #newylarge { 
+    background-image: url("slick-image/960*395/newyork-xl.jpeg"); 
+}
+    .newylarge #newylarge .inner {
+    padding-top: 41.14%;
+}
+
+.lvivlarge #lvivlarge { 
+    background-image: url("slick-image/960*395/lviv-xl.jpg"); 
+}
+.lvivlarge #lvivlarge .inner {
+    padding-top: 41.14%;
+}
+
+.budlarge #budlarge { 
+    background-image: url("slick-image/960*395/budapest-xl.jpg"); 
+}
+.budlarge #budlarge .inner {
+    padding-top: 41.14%;
+}
+
+.parislarge #parislarge { 
+    background-image: url("slick-image/960*395/paris-xl.jpg"); 
+}
+.parislarge #parislarge .inner {
+    padding-top: 41.14%;
+}
+
+
+}
+
+@media  screen and (max-width: 1680px) {
+   
+   .newylarge #newylarge { 
+    background-image: url("slick-image/770*370/newyork-l.jpeg"); 
+}
+    .newylarge #newylarge .inner {
+    padding-top: 48.05%;
+}
+   
+.lvivlarge #lvivlarge { 
+    background-image: url("slick-image/770*370/lviv-l.jpg"); 
+}
+.lvivlarge #lvivlarge .inner {
+    padding-top: 48.05%;
+}
+   
+   .budlarge #budlarge { 
+    background-image: url("slick-image/770*370/budapest-l.jpg"); 
+}
+   .budlarge #budlarge .inner {
+    padding-top: 48.05%;
+}
+
+.parislarge #parislarge { 
+    background-image: url("slick-image/770*370/paris-l.jpg"); 
+}
+.parislarge #parislarge .inner {
+    padding-top: 48.05%;
+}
+}
+
+
+@media  screen and (max-width: 1440px) {
+   
+    .newylarge #newylarge { 
+    background-image: url("slick-image/685*365/newylarge.jpg"); 
+}
+    .newylarge #newylarge .inner {
+    padding-top: 53.28%;
+}
+
+.lvivlarge #lvivlarge { 
+    background-image: url("slick-image/685*365/lvivlarge.jpg"); 
+}
+.lvivlarge #lvivlarge .inner {
+    padding-top: 53.28%;
+}
+
+.budlarge #budlarge { 
+    background-image: url("slick-image/685*365/budlarge.jpg"); 
+}
+.budlarge #budlarge .inner {
+    padding-top: 53.28%;
+}
+
+
+.parislarge #parislarge { 
+    background-image: url("slick-image/685*365/parislarge.jpg"); 
+}
+.parislarge #parislarge .inner {
+    padding-top: 53.28%;
+}
+
+}
+
+@media  screen and (max-width: 1280px) {
+     
+    .newylarge #newylarge { 
+    background-image: url("slick-image/610*350/newyork-xs.jpeg"); 
+}
+    .newylarge #newylarge .inner {
+    padding-top: 57.37%;
+}
+
+.lvivlarge #lvivlarge { 
+    background-image: url("slick-image/610*350/lviv-xs.jpg"); 
+}
+.lvivlarge #lvivlarge .inner {
+    padding-top: 57.37%;
+}
+
+.budlarge #budlarge { 
+    background-image: url("slick-image/610*350/budapest-xs.jpg"); 
+}
+.budlarge #budlarge .inner {
+    padding-top: 57.37%;
+}
+
+.parislarge #parislarge { 
+    background-image: url("slick-image/610*350/paris-xs.jpg"); 
+}
+.parislarge #parislarge .inner {
+    padding-top: 57.37%;
+}
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  
+  .newylarge #newylarge { 
+    background-image: url("slick-image/482*330/newyork-s.jpeg"); 
+}
+    .newylarge #newylarge .inner {
+    padding-top: 68.46%;
+}
+
+.lvivlarge #lvivlarge { 
+    background-image: url("slick-image/482*330/lviv-s.jpg"); 
+}
+.lvivlarge #lvivlarge .inner {
+    padding-top: 68.46%;
+}
+
+.budlarge #budlarge { 
+    background-image: url("slick-image/482*330/budapest-s.jpg"); 
+}
+.budlarge #budlarge .inner {
+    padding-top: 68.46%;
+}
+
+.parislarge #parislarge { 
+    background-image: url("slick-image/482*330/paris-s.jpg"); 
+}
+.parislarge #parislarge .inner {
+    padding-top: 68.46%;
+}
+
+}
+
