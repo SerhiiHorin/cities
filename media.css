@@ -11,7 +11,7 @@
 #bigSlade {
     display: block;
 }
-#sing {
+#sing, #sing-tadam {
     margin: 40px 0;
 }  
 .poem {
@@ -37,7 +37,7 @@ h3 {
     margin-left: 10px;
     margin-top: 50px; 
 }
-#sing {
+#sing, #sing-tadam {
     margin: 15px 0 15px 0;
 }   
 .checkInput {
@@ -107,7 +107,7 @@ h3 {
     margin-bottom: 55px;
     padding-top: 90px;
 }
-#sing {
+#sing, #sing-tadam {
     margin: 15px 0 15px 0;
 }
 .checkInput {
@@ -224,7 +224,7 @@ h2 {
     padding: 0; 
     border-right: none !important; 
 } 
-#sing {
+#sing, #sing-tadam {
     margin: 15px 0 15px 0;
 }    
 .checkInput {
@@ -355,7 +355,7 @@ h1 {
     padding: 0; 
     border-right: none !important; 
 } 
-#sing {
+#sing, #sing-tadam {
     margin: 15px 0 15px 0;
     padding: 0 120px 0 0;
 }
