@@ -1,0 +1,237 @@
+@page {
+  margin: 1cm;
+}
+
+@media print {
+    body {
+    color: #000;
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    page-break-inside:avoid;
+    page-break-after:avoid;
+}
+img {
+    page-break-inside:avoid;
+    page-break-after:avoid;
+    max-width: 100% !important;
+}
+#heading {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+#heading h1 {
+    text-align: left;
+    margin: 15px 0 5px 0;
+}
+#heading h3 {
+    text-align: left;
+    margin: 15px 0 5px 0;
+}
+#heading1 h1 {
+    text-align: left;
+    margin: 15px 0 5px 0;
+}
+#heading1 h3 {
+    text-align: left;
+    margin: 15px 0 5px 0;
+}
+.navFirst, .button {
+    display: none;
+}
+a[href]:after {
+    content: none !important;
+}
+#contacts {
+    page-break-inside: avoid; 
+    page-break-after:avoid;
+    padding: 10px 0 10px 0;
+}
+.submit-success {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+}
+.submit-success {
+    padding: 10px 0 10px 0;
+    margin: 10px 0 0 0;
+}
+.back-to-view {
+    top: 37%;
+    left: -92%; 
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color:#fff !important;
+}
+.slick-next:before, .slick-prev:before {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color:#fff !important;
+}
+#sliderCarousel {
+    page-break-inside:avoid;
+    page-break-after:avoid; 
+}
+footer {
+    position: static;
+    page-break-inside:avoid;
+    page-break-after:avoid;
+    margin: 10px 0 0 0;
+}
+.newylarge #newylarge inner {
+    display: none;
+}
+.newylarge:after {
+     content: url("slick-image/482*330/newyork-s.jpeg");
+}
+.lvivlarge #lvivlarge .inner {
+    display: none;
+}
+.lvivlarge:after {
+    content: url("slick-image/482*330/lviv-s.jpg");
+}
+.budlarge #budlarge .inner {
+    display: none;
+}
+.budlarge:after {
+    content: url("slick-image/482*330/budapest-s.jpg");
+}
+.parislarge #parislarge .inner {
+    display: none;
+}
+.parislarge:after {
+    content: url("slick-image/482*330/paris-s.jpg");
+}
+.vdivide a {
+    padding-left: 2px;
+    padding-right: 2px;
+    display: inline;
+}
+.letter #letter .inner {
+    display: none;
+}
+.camera #camera .inner {
+      display: none;
+}
+.ny #newy .inner {
+    display: none;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+.tadam {
+    padding-left: 0;
+} 
+.letter:after {
+    content: url("letter/letter-xs.jpg");
+}
+.camera:after {
+    content: url("heading-image/camera-s.jpg");
+}
+.ny:after {
+    content: url("heading-image/newyork-s.jpg");
+}
+.fa-4x {
+    margin: 105px 0 0 5px;
+}
+.textAtForm h3 {
+   padding: 85px 0 0 20px;
+}
+.textAtForm h5 {
+   padding: 0 0 0 20px;
+}
+.formlinks {
+    display: block;
+}
+.sing {
+    border-right: 1px solid #E5E5E5;
+}
+.back-to-view {
+    top: 45%;
+    left: -92%;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color:#fff !important;
+}
+.slick-next:before, .slick-prev:before {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color:#fff !important;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.formlinks {
+    display: block;
+}
+.sing {
+    border-right: 1px solid #E5E5E5;
+}
+.tadam {
+    padding-left: 0;
+}
+.back-to-view {
+    top: 37%;
+    left: -92%;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color:#fff !important;
+}
+.slick-next:before, .slick-prev:before {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color:#fff !important;
+}
+.letter:after {
+    content: url("letter/letter-xs.jpg");
+}
+.camera:after {
+    content: url("heading-image/camera-s.jpg");
+  }
+.ny:after {
+    content: url("heading-image/newyork-s.jpg");
+}
+}
+@media (max-width: 992px) {
+.back-to-view {
+    display: none;
+}
+#bigSlade {
+    display: none;
+}
+.tadam {
+    padding-left: 0;   
+}
+}
+
+@media (min-width : 320px) and (max-width : 767px) {
+.owl-next, .owl-prev, .owl-page  {
+    display: none !important;
+}
+.formlinks {
+    display: none;
+}
+.sing {
+    border-right: none; 
+}
+.back-to-view {
+    display: none;
+}
+#bigSlade {
+    display: none;
+}
+.tadam {
+    text-align: center;   
+}
+.letter:after {
+    content: url("letter/letter-xl.jpg");
+}
+.camera:after {
+    content: url("heading-image/camera-l.jpg");
+}
+.ny:after {
+    content: url("heading-image/newyork-l.jpg");
+}
+} 

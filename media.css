@@ -2,241 +2,458 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-            img.smallscreen, .newyorkes { 
-                display: none; 
-        }
-             #sliderCarousel {
-                display: block;
-            }
-            #bigSlade {
-                display: block;
-            }
-             
+#owl-demo {
+    padding: 65px 0 10px 0;
 }
-
+#sliderCarousel {
+    display: block;
+}
+#bigSlade {
+    display: block;
+}
+#sing {
+    margin: 40px 0;
+}  
+.poem {
+    display:block;
+    width:100%;
+    height: 237px;
+    padding: 0;  
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-          h1, h3 {
-            text-align: left;
-            margin-left: 0;
-            margin-top: 30px;
-            margin-bottom: 40px;
-        }
-          .button {
-            margin-left: 10px;
-            margin-top: 50px;
-        }
-            img.smallscreen, .newyorkes { 
-                display: none; 
-        }
-            #sliderCarousel {
-                display: block;
-            }
-            #bigSlade {
-                display: none !important;
-            }
-           
-    
+h1 {
+    text-align: left;
+    margin: 30px 0 40px 0;
 }
-
-
-
+h3 {
+    text-align: left;        
+    margin: 30px 0 40px 0;       
+}        
+.left-btn {
+    margin-left: 10px;
+    margin-top: 50px; 
+}
+#sing {
+    margin: 15px 0 15px 0;
+}   
+.checkInput {
+    padding: 0 10px 0 7px;
+}
+#heading1 {
+    padding-top: 90px;
+    margin-top: 0px;
+}
+#sliderCarousel {
+    display: block;
+}
+#sliderCarousel {
+    padding-top: 70px;
+}
+#bigSlade {
+    display: none !important;
+}
+.submit-fail, .long-message  {
+    bottom: -9%;
+}
+.back-to-view {
+    display: none;
+}
+.poem {
+    display:block;
+    width:100%;
+    height: 175px;
+    padding: 0;  
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.blog-img #blog-img .inner {
+    padding-top: 36.06%;
+}
+.blog-img #blog-img { 
+    background-image: url("image-blog/blog-xl.jpg"); 
+}
+.blg {
+    display: none;
+}  
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-            img.smallscreen, .newyorkes { 
-                display: none; 
-        }
-            .button {
-                margin-left: 15px;
-                margin-top: 10px;
-        }
-            h1 {
-                text-align: center;  
-        }     
-            #bigSlade {
-                display: none !important;
-            }
-            .back-to-view {
-                 display: none;
-             } 
-             
-             .vdivide a {
-            padding-left: 10px;
-            padding-right: 10px; 
-             }
+.left-btn {
+    margin-left: 35px;
+    margin-top: 30px;
 }
-
+#heading h1 {
+    text-align: left;
+    margin: 20px 0 20px 20px;
+}
+#heading h3 {
+    text-align: left;
+    margin: 20px 0 20px 20px;
+}    
+#heading1 h1 {
+    text-align: left;
+    margin: 20px 0 20px 20px;
+}
+#heading1 h3 {
+    text-align: left;
+    margin: 20px 0 20px 20px;
+}
+#heading {
+    margin-bottom: 55px;
+    padding-top: 90px;
+}
+#sing {
+    margin: 15px 0 15px 0;
+}
+.checkInput {
+    padding: 0 10px 0 7px;
+}
+.fa-4x {
+    margin: 105px 0 0 0;
+}
+#heading1 {
+    padding-top: 50px;
+    margin-top: 0px;
+}
+#sliderCarousel {
+    padding-top: 50px;
+}
+#bigSlade {
+    display: none !important;
+}
+.back-to-view {
+    display: none;
+} 
+.vdivide a {
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+.ny #newy .inner {
+    padding-top: 56.32%;
+}
+.ny #newy { 
+    background-image: url("heading-image/newyork-l.jpg"); 
+}
+.camera #camera .inner {
+    padding-top: 56.32%;
+}
+.camera #camera { 
+    background-image: url("heading-image/camera-l.jpg"); 
+}  
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+.smallContainer {
+    width: 100%; 
+    position: relative;
+    margin:25px auto 10px 0; 
+    text-align:justify; 
+    border-right: 1px solid #fff;
+}
+.poem {
+    text-align: justify;
+    padding: 0 5px 0 0;
+    width: 100%; 
+    height:155px;
+    overflow: auto;
+}
+.fade_top {
+    position: absolute;
+    height: 20px;
+    width: 95%;
+    top:0; 
+    left:0;
+    background:url(graphics/fade_top.png);
+}
+.fade_bottom {
+    position: absolute;
+    height: 30px;
+    width:95%;
+    top:130px; 
+    left:0;
+    background:url(graphics/fade_bottom.png);
+}
+.poem h2 {
+    margin-top: 15px;
+    margin-bottom:5px;
+}
+.poem h4 {
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+.blog-img #blog-img .inner {
+    padding-top: 43.0%;
+}
+.blog-img #blog-img { 
+    background-image: url("image-blog/blog-l.jpg"); 
+}
+.blg {
+    display: none;
+}  
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-             h1, h3 {
-            text-align: left;
-            margin-left: 0;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            font-size: 16px;
-        }
-            h1{
-            font-weight: 600;
-        }
-           .button {
-            padding: 5px 15px;
-            text-align: center;
-        }
-           .button {
-            margin: 10px 0 10px 25px;
-        }
-            
-            img.bigscreen, .newyorkes { 
-                display: none; 
-        }
-            img.smallscreen { 
-                display: inline; 
-        }
-            #owl-demo .owl-item .hovereffect .overlay h2 {
-                font-size: 14px;
-        }
-            #owl-demo .owl-item .hovereffect .overlay p {
-                font-size: 14px;
-        }
-            
-            #bigSlade {
-                display: none !important;
-            }
-            .back-to-view {
-                 display: none;
-             } 
-             
-            
+#heading {
+    margin-bottom: 35px;
+    padding-top: 70px;
+}
+.left-btn {
+    margin: 10px 0 35px 20px;
+    padding: 10px 60px 10px 60px;
+}
+#owl-demo .owl-item .hovereffect .overlay h2 {
+    font-size: 14px;
+}
+#owl-demo .owl-item .hovereffect .overlay p {
+    font-size: 14px;
+}
+.owl-next, .owl-prev {
+    display: none !important;
+}   
+.formlinks {
+    display: none !important;
+}
+.sing {
+    padding: 0; 
+    border-right: none !important; 
+} 
+#sing {
+    margin: 15px 0 15px 0;
+}    
+.checkInput {
+    padding: 0 10px 0 7px;
+}
+#heading1 { 
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+#sliderCarousel {
+    padding-top: 40px;
+}
+#bigSlade {
+    display: none !important;
+}
+.back-to-view {
+    display: none;
+} 
+.ny #newy .inner {
+    padding-top: 68%;
+}
+.ny #newy { 
+    background-image: url("heading-image/newyork-s.jpg"); 
+}
+.camera #camera .inner {
+    padding-top: 68%;
+}
+.camera #camera { 
+    background-image: url("heading-image/camera-s.jpg"); 
+}   
+h2 {
+    font-size: 22px;
+}
+.signature, .vdivide, .sociallinks {
+    text-align: center;
+    line-height: 55px;
+    height: 55px;
+}
+.sociallinks {
+    margin-bottom: 40px;
+}
+.blog-img #blog-img .inner {
+    padding-top: 58.0%;
+}
+.blog-img #blog-img { 
+    background-image: url("image-blog/blog-s.jpg"); 
+}
+.blg {
+    display: none;
+}  
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-           #heading h1 {
-            text-align: left;
-            margin-left: 0;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 16px;
-        }
-            #heading h3 {
-            text-align: left;
-            margin-left: 0;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 16px;
-        }
-            #heading1 h1 {
-            text-align: left;
-            margin-left: 0;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 16px;
-        }
-            #heading1 h3 {
-            text-align: left;
-            margin-left: 0;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 16px;
-        }
-            
-            h1 {
-            font-weight: 600;
-        }
-           .button {
-            padding: 7px 75px;
-            text-align: center;
-        }
-           .button {
-            margin: 30px 0 30px 38px;
-        }
-            img.bigscreen, .smallscreen { 
-                display: none !important;
-        }
-            img.newyorkes { 
-                display: inline; 
-        }
-           
-            #owl-demo .owl-item .hovereffect .overlay h2 {
-                font-size: 14px;
-        }
-            #owl-demo .owl-item .hovereffect .overlay p {
-                font-size: 14px;
-        }
-                 
-            
-            #bigSlade {
-                display: none !important;
-            }
-            .slick-slide p {
-                   font-size: 13px;
-           }
-           #heading {
-            margin-bottom: 30px;
-            padding-top: 80px;
-             } 
-             
-             .owl-next, .owl-prev {
-                 display: none !important;
-             }
-             #owl-demo {
-            padding: 60px 0 10px 0;
-                 
-             }
-             .owl-page {
-                 margin: 0 7px 0 7px ;
-             }
-            .formlinks {
-                display: none;
-            }
-            #sing {
-           margin: 20px 0 20px 0;
-           padding: 0 120px 0 0;
-              }
-              .sing {
-             padding: 0; 
-             border-right: none; 
-             } 
-            .borderForm {
-            margin: 0 13px 0 -5px;
-            }
-            #contacts {
-             padding-top: 50px;
-            margin-top: 0px;  
-            padding-bottom: 40px;
-
-           }
-           h2 {
-            font-size: 22px;
-            }
-            .buttonForm {
-                padding: 7px 75px;
-            text-align: center;
-            }
-            
-            #heading1 {
-                margin-bottom: 10px;
-                padding-top: 30px;
-                padding-bottom: 20px;
-            }
-            #slideText {
-            margin-top: 40px;
-               }
-               
-               .back-to-view {
-                 display: none;
-             } 
-             
-             .vdivide a {
-            padding-left: 7px;
-            padding-right: 7px; 
-             }
+#heading h1 {
+    text-align: left;
+    margin: 15px 0 5px 0;
+    font-size: 24px;
 }
-
-
-
+#heading h3 {
+    text-align: left;
+    margin: 15px 0 5px 0;
+    font-size: 24px;
+}
+#heading1 h1 {
+    text-align: left;
+    margin: 15px 0 5px 0;
+    font-size: 24px;
+}
+#heading1 h3 {
+    text-align: left;
+    margin: 15px 0 5px 0;
+    font-size: 24px;
+}
+h1 {
+    font-weight: 600;
+}
+.left-btn {
+    padding: 7px 55px;
+    margin: 30px 0 30px 15px;
+}
+.ny #newy .inner {
+    padding-top: 62.5%;
+}
+.ny #newy { 
+    background-image: url("heading-image/newyork-xs.jpg"); 
+}
+.camera #camera .inner {
+    padding-top: 62.5%;
+}
+.camera #camera { 
+    background-image: url("heading-image/camera-xs.jpg"); 
+}  
+#owl-demo {
+    padding: 60px 0 10px 0;
+}
+#owl-demo .owl-item .hovereffect .overlay h2 {
+    font-size: 14px;
+}
+#owl-demo .owl-item .hovereffect .overlay p {
+    font-size: 14px;
+}
+.owl-next, .owl-prev {
+    display: none !important;
+}
+.owl-page {
+    margin: 0 7px 0 7px !important;
+}
+#bigSlade {
+    display: none !important;
+}
+.slick-slide p {
+    font-size: 13px;
+}
+#heading {
+    margin-bottom: 30px;
+    padding-top: 80px;
+} 
+#sliderCarousel {
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.formlinks {
+    display: none !important;
+}   
+.sing {
+    padding: 0; 
+    border-right: none !important; 
+} 
+#sing {
+    margin: 15px 0 15px 0;
+    padding: 0 120px 0 0;
+}
+.btnForm {
+    margin-top: 25px;
+}
+.buttonForm {
+    margin-bottom: 25px;
+    z-index: 1;
+} 
+.checkInput {
+    padding: 0 5px 0 5px;
+}   
+.borderForm {
+    margin: 0 13px 0 -5px;
+}
+#contacts {
+    padding-top: 50px;
+    margin-top: 0;  
+    padding-bottom: 40px;
+}
+h2 {
+    font-size: 22px;
+}
+.buttonForm {
+    padding: 7px 75px;
+    text-align: center;
+}
+#heading1 {
+    margin-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#slideText {
+    margin-top: 40px;
+}
+.back-to-view {
+    display: none;
+} 
+.vdivide a {
+    padding-left: 7px;
+    padding-right: 7px; 
+}
+.poem {
+    text-align: justify;
+    padding: 0 5px 0 10px;
+    width: 280px; 
+    height:180px;
+    overflow: auto;
+    position: relative;
+    margin:25px auto 10px 0; 
+}
+.fade_top {
+    position: absolute;
+    height: 30px;
+    width: 263px;
+    top:0; 
+    left: 0;
+    background:url(graphics/fade_top.png);
+    z-index: 1;
+}
+.fade_bottom {
+    position: absolute;
+    height: 30px;
+    width: 263px;
+    top: 150px; 
+    left: 0;
+    background:url(graphics/fade_bottom.png);
+}
+.poem h2 {
+    margin-top: 15px;
+    margin-bottom:5px;
+}
+.letter #letter .inner {
+    padding-top: 62.58%;
+}
+.letter #letter { 
+    background-image: url("letter/letter-l.jpg"); 
+}
+.close-success {
+    top: -41px;
+    right: -1px;
+    font-size: 28px;
+    padding: 0 18px 0 18px;
+}
+.blog-img #blog-img .inner {
+    padding-top: 74.5%;
+}
+.blog-img #blog-img { 
+    background-image: url("image-blog/blog-xs.jpg"); 
+}
+.blg {
+    display: none;
+} 
+.hovereffect img {
+    max-height: 190px;
+} 
+}
 
 /*==========  Mobile First Method  ==========*/
 
@@ -252,204 +469,512 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-         
+        
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-         .two p span {
-                 display: none;
-             }
+.blog-img #blog-img .inner {
+    display: none;
+}
 }
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-            img.smallscreen, .newyorkes { 
-                display: none; 
-        }
-           .two p span {
-                 display: inline;
-             }   
+    
 }
 
-
-
-
-
-/* ----------- iPhone 6 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
- 
-
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.formlinks {
+    display: none !important;
+}
+.sing {
+    padding: 0; 
+    border-right: none !important; 
+}
+.smallContainer {
+    width: 100%; 
+    position: relative;
+    margin:25px auto 10px 0; 
+    text-align:justify; 
+    border-right: 1px solid #fff;
+}
+.poem {
+    text-align: justify;
+    padding: 0 5px 0 0;
+    width: 100%; 
+    height:110px;
+    overflow: auto;
+}
+.fade_top {
+    position: absolute;
+    height: 20px;
+    width: 98%;
+    top: 0;
+    left: -6px;
+    background:url(graphics/fade_top.png);
+}
+.fade_bottom {
+    position: absolute;
+    height: 25px;
+    width: 98%;
+    top: 85px; 
+    left: -6px;
+    background:url(graphics/fade_bottom.png);
+}
+.poem h2 {
+    margin-top: 15px;
+    margin-bottom:5px;
+}
+.poem h4 {
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+.signature, .vdivide, .sociallinks {
+    text-align: center;
+    line-height: 55px;
+    height: 55px;
+} 
+.sociallinks {
+    margin-bottom: 40px;
+}
 }
 
-
-
-
+/* Large screen */
 @media  screen and (min-width: 1920px) {
-
- .newylarge #newylarge { 
+.fa-4x {
+    margin: 105px 0 0 65px;
+}
+.textAtForm h3 {
+    padding: 90px 0 0 75px;
+}
+.textAtForm h5 {
+    padding: 0 0 0 75px;
+}
+.newylarge #newylarge { 
     background-image: url("slick-image/960*395/newyork-xl.jpeg"); 
 }
-    .newylarge #newylarge .inner {
+.newylarge #newylarge .inner {
     padding-top: 41.14%;
 }
-
 .lvivlarge #lvivlarge { 
     background-image: url("slick-image/960*395/lviv-xl.jpg"); 
 }
 .lvivlarge #lvivlarge .inner {
     padding-top: 41.14%;
 }
-
 .budlarge #budlarge { 
     background-image: url("slick-image/960*395/budapest-xl.jpg"); 
 }
 .budlarge #budlarge .inner {
     padding-top: 41.14%;
 }
-
 .parislarge #parislarge { 
     background-image: url("slick-image/960*395/paris-xl.jpg"); 
 }
 .parislarge #parislarge .inner {
     padding-top: 41.14%;
 }
-
-
+.ny #newy { 
+    background-image: url("heading-image/newyork-xl.jpg"); 
+}
+.ny #newy .inner {
+    padding-top: 56.25%;
+}
+.camera #camera { 
+    background-image: url("heading-image/camera-xl.jpg"); 
+}  
+.camera #camera .inner {
+    padding-top: 56.25%;
+}
+.slick-prev {
+    left: -150px !important;
+    top: 86% !important;
+}
+.slick-next {
+    left: -95px !important;
+    top: 86% !important;
+}
+.back-to-view {
+    top: 66%;
+    left: -95%; 
+}
+#heading, #heading1, #owl-demo, #contacts, #sliderCarousel  {
+    padding-top: 350px;
+    padding-bottom: 350px; 
+}
+.contact-link, .submit-success  {
+    padding-top: 330px;
+    padding-bottom: 350px; 
+}
 }
 
 @media  screen and (max-width: 1680px) {
-   
-   .newylarge #newylarge { 
+.newylarge #newylarge { 
     background-image: url("slick-image/770*370/newyork-l.jpeg"); 
 }
-    .newylarge #newylarge .inner {
+.newylarge #newylarge .inner {
     padding-top: 48.05%;
 }
-   
 .lvivlarge #lvivlarge { 
     background-image: url("slick-image/770*370/lviv-l.jpg"); 
 }
 .lvivlarge #lvivlarge .inner {
     padding-top: 48.05%;
 }
-   
-   .budlarge #budlarge { 
+.budlarge #budlarge { 
     background-image: url("slick-image/770*370/budapest-l.jpg"); 
 }
-   .budlarge #budlarge .inner {
+.budlarge #budlarge .inner {
     padding-top: 48.05%;
 }
-
 .parislarge #parislarge { 
     background-image: url("slick-image/770*370/paris-l.jpg"); 
 }
 .parislarge #parislarge .inner {
     padding-top: 48.05%;
 }
+.slick-prev {
+    left: -150px !important;
+    top: 92% !important;
+}
+.slick-next {
+    left: -95px !important;
+    top: 92% !important;
+}
+.back-to-view {
+    top: 68%;
+    left: -95%; 
+}
+}
+@media  screen and (min-width: 1680px) {
+.left-btn {
+    padding: 30px 70px 30px 70px;
+    margin: 120px 0 45px 160px;
+}
+#heading h1 {
+    text-align: left;
+    margin: 50px 0 40px 160px;
+}
+#heading h3 {
+    text-align: left;
+    margin: 50px 0 40px 160px;
+}
+#heading1 h1 {
+    text-align: left;
+    margin: 50px 0 40px 160px;
+}
+#heading1 h3 {
+    text-align: left;
+    margin: 50px 0 40px 160px;
+}
 }
 
+@media  screen and (max-width: 1600px) {
+.slick-prev {
+    left: -150px !important;
+    top: 86% !important;
+}
+.slick-next {
+    left: -95px !important;
+    top: 86% !important;
+}
+.back-to-view {
+    top: 62%;
+    left: -95%; 
+}
+}
+
+@media  screen and (max-width: 1536px) {
+.slick-prev {
+    left: -150px !important;
+    top: 81% !important;
+}
+.slick-next {
+    left: -95px !important;
+    top: 81% !important;
+}
+.back-to-view {
+    top: 57%;
+    left: -95%; 
+}
+}
 
 @media  screen and (max-width: 1440px) {
-   
-    .newylarge #newylarge { 
+.newylarge #newylarge { 
     background-image: url("slick-image/685*365/newylarge.jpg"); 
 }
-    .newylarge #newylarge .inner {
+.newylarge #newylarge .inner {
     padding-top: 53.28%;
 }
-
 .lvivlarge #lvivlarge { 
     background-image: url("slick-image/685*365/lvivlarge.jpg"); 
 }
 .lvivlarge #lvivlarge .inner {
     padding-top: 53.28%;
 }
-
 .budlarge #budlarge { 
     background-image: url("slick-image/685*365/budlarge.jpg"); 
 }
 .budlarge #budlarge .inner {
     padding-top: 53.28%;
 }
-
-
 .parislarge #parislarge { 
     background-image: url("slick-image/685*365/parislarge.jpg"); 
 }
 .parislarge #parislarge .inner {
     padding-top: 53.28%;
 }
+ .slick-prev {
+    left: -150px !important;
+    top: 95.5% !important;
+}
+.slick-next {
+    left: -95px !important;
+    top: 95.5% !important;
+}
+.back-to-view {
+    top: 67%;
+    left: -95%; 
+}
+}
 
+@media  screen and (max-width: 1366px) {
+.slick-prev {
+    left: -150px !important;
+    top: 72% !important;
+}
+.slick-next {
+    left: -95px !important;
+    top: 72% !important;
+}
+.back-to-view {
+    top: 47%;
+    left: -94%; 
+}
 }
 
 @media  screen and (max-width: 1280px) {
-     
-    .newylarge #newylarge { 
+.newylarge #newylarge { 
     background-image: url("slick-image/610*350/newyork-xs.jpeg"); 
 }
-    .newylarge #newylarge .inner {
+.newylarge #newylarge .inner {
     padding-top: 57.37%;
 }
-
 .lvivlarge #lvivlarge { 
     background-image: url("slick-image/610*350/lviv-xs.jpg"); 
 }
 .lvivlarge #lvivlarge .inner {
     padding-top: 57.37%;
 }
-
 .budlarge #budlarge { 
     background-image: url("slick-image/610*350/budapest-xs.jpg"); 
 }
 .budlarge #budlarge .inner {
     padding-top: 57.37%;
 }
-
 .parislarge #parislarge { 
     background-image: url("slick-image/610*350/paris-xs.jpg"); 
 }
 .parislarge #parislarge .inner {
     padding-top: 57.37%;
 }
-
+.slick-prev {
+    left: -150px !important;
+    top: 79% !important;
+}
+.slick-next {
+    left: -95px !important;
+    top: 79% !important;
+}
+.back-to-view {
+    top: 50%;
+    left: -94%; 
+}
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  
-  .newylarge #newylarge { 
+@media only screen and (min-width: 1536px) and (max-width: 1920px) {
+#heading, #heading1, #owl-demo, #contacts, #sliderCarousel  {
+    padding-top: 220px;
+    padding-bottom: 200px; 
+}
+.contact-link, .submit-success  {
+    padding-top: 180px;
+    padding-bottom: 200px; 
+}
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1536px) {
+#heading, #heading1, #owl-demo, #contacts, #sliderCarousel  {
+    padding-top: 170px;
+    padding-bottom: 170px; 
+}
+.contact-link, .submit-success  {
+    padding-top: 180px;
+    padding-bottom: 200px; 
+}
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1366px) {
+.sociallinks {
+   margin-bottom: 50px;
+}
+#heading, #heading1, #owl-demo, #contacts, #sliderCarousel  {
+    padding-top: 110px;
+    padding-bottom: 150px; 
+}
+.contact-link, .submit-success  {
+    padding-top: 110px;
+    padding-bottom: 200px; 
+}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+.sociallinks {
+   margin-bottom: 50px;
+}
+#heading, #heading1, #owl-demo, #contacts, #sliderCarousel  {
+    padding-top: 135px;
+    padding-bottom: 150px; 
+}
+.contact-link, .submit-success  {
+    padding-top: 130px;
+    padding-bottom: 200px; 
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.newylarge #newylarge { 
     background-image: url("slick-image/482*330/newyork-s.jpeg"); 
 }
-    .newylarge #newylarge .inner {
+.newylarge #newylarge .inner {
     padding-top: 68.46%;
 }
-
 .lvivlarge #lvivlarge { 
     background-image: url("slick-image/482*330/lviv-s.jpg"); 
 }
 .lvivlarge #lvivlarge .inner {
     padding-top: 68.46%;
 }
-
 .budlarge #budlarge { 
     background-image: url("slick-image/482*330/budapest-s.jpg"); 
 }
 .budlarge #budlarge .inner {
     padding-top: 68.46%;
 }
-
 .parislarge #parislarge { 
     background-image: url("slick-image/482*330/paris-s.jpg"); 
 }
 .parislarge #parislarge .inner {
     padding-top: 68.46%;
 }
+.left-btn {
+    padding: 10px 35px;
+    margin: 90px 0 30px 55px;
+}
+#heading, #owl-demo, #contacts, #sliderCarousel  {
+    padding-top: 140px;
+    padding-bottom: 140px; 
+}
+.contact-link, .submit-success  {
+    padding-top: 140px;
+    padding-bottom: 200px; 
+}
+#heading h1 {
+    text-align: left;
+    margin: 15px 0 5px 15px;
+}
+#heading h3 {
+    text-align: left;
+    margin: 15px 0 5px 15px;
+}
+#heading1 h1 {
+    text-align: left;
+    margin: 15px 0 5px 15px;
+}
+#heading1 h3 {
+    text-align: left;
+    margin: 15px 0 5px 15px;
+}
+/*#contacts {*/
+/*    margin-bottom: 0;*/
+/*    padding-bottom: 70px;*/
+/*}*/
+.fa-4x {
+    margin: 95px 0 0 10px;
+}
+.textAtForm h3 {
+    padding: 80px 0 0 10px;
+    margin: 15px 0 15px 0;
+}   
+.textAtForm h5 {
+    padding: 0 0 0 10px;
+}
+#heading1 {
+    padding-top: 140px;
+    padding-bottom: 140px; 
+    margin-top: 0;
+}
+.slick-prev {
+    left: -150px !important;
+    top: 61% !important;
+}
+.slick-next {
+    left: -95px !important;
+    top: 61% !important;
+}   
+.back-to-view {
+    top: 30%;
+    left: -92%; 
+}
+.poem h2 {
+    margin-top: 1px;
+}
+.poem h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.poem {
+    display:block;
+    width:100%;
+    padding: 0;  
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.fade_top, .fade_bottom {
+    display: none;
+}
+.sociallinks {
+   margin-bottom: 50px;
+}
+}
 
+@media screen and (max-width:1080px){
+.newylarge #newylarge { 
+    background-image: url("slick-image/482*330/newyork-s.jpeg"); 
+}
+.newylarge #newylarge .inner {
+    padding-top: 68.46%;
+}
+.lvivlarge #lvivlarge { 
+    background-image: url("slick-image/482*330/lviv-s.jpg"); 
+}
+.lvivlarge #lvivlarge .inner {
+    padding-top: 68.46%;
+}
+.budlarge #budlarge { 
+    background-image: url("slick-image/482*330/budapest-s.jpg"); 
+}
+.budlarge #budlarge .inner {
+    padding-top: 68.46%;
+}
+.parislarge #parislarge { 
+    background-image: url("slick-image/482*330/paris-s.jpg"); 
+}
+.parislarge #parislarge .inner {
+    padding-top: 68.46%;
+}
 }
 

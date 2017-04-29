@@ -1,13 +1,26 @@
 
-function createSlick() {
+
 $(document).ready(function(){
+ function createSlick() { 
  $('.slider').not('.slick-initialized').slick({
   
     // the magic
   responsive: [{
         
-        
+        breakpoint: 3841,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        cssEase: 'linear',
+        asNavFor: '.slider-nav-thumbnails',
+        draggable: true,
+        fade: true,
+        speed: 500
+      }
 
+    },{
+        
         breakpoint: 2561,
         settings: {
         slidesToShow: 1,
@@ -90,47 +103,7 @@ $(document).ready(function(){
         fade: true,
         speed: 500
       }
-      },{
-
-      breakpoint: 425,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        cssEase: 'linear',
-        asNavFor: '.slider-nav-thumbnails',
-        draggable: false,
-        fade: true,
-        speed: 500
       }
-      },{
-
-      breakpoint: 375,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        cssEase: 'linear',
-        asNavFor: '.slider-nav-thumbnails',
-        draggable: false,
-        fade: true,
-        speed: 500
-      }
-      },{
-
-      breakpoint: 320,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        cssEase: 'linear',
-        asNavFor: '.slider-nav-thumbnails',
-        draggable: false,
-        fade: true,
-        speed: 500
-      }
-      }
-    
     
     ]
 });
@@ -139,6 +112,19 @@ $(document).ready(function(){
 $('.slider-nav-thumbnails').not('.slick-initialized').slick({
   
   responsive: [{
+
+        breakpoint: 3841,
+        settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider',
+        dots: true,
+        centerMode: true,
+        centerPadding: '30px',
+        cssEase: 'ease',
+        arrows: true,
+        focusOnSelect: true
+        }},{
 
         breakpoint: 2561,
         settings: {
@@ -259,16 +245,13 @@ $('.slider-nav-thumbnails').not('.slick-initialized').slick({
      ]
     
 });
-
-});
-
 }
 
 createSlick();
 
+
 //Now it will not throw error, even if called multiple times.
 $(window).on('resize', createSlick);
-
 
  //remove active class from all thumbnail slides
  $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
@@ -289,7 +272,11 @@ $('.slider').on('afterChange', function(event, slick, currentSlide){
   $('.content').hide();
   $('.content[data-id=' + (currentSlide + 1) + ']').show();
 });
-  
+});
+
+
+
+
 $(document).ready(function(){
     $(".back-to-view").click(function(){
         $('.slider').slick('slickGoTo',0);
