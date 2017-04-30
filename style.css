@@ -487,10 +487,10 @@ a:active .fa-4x  {
     -khtml-opacity: 0.75;
     z-index: 1000;
 }
-.slick-prev::before {
+.slick-prev:before {
     content: '❮'!important;
     color: #FFFFFF;
-     opacity: 0.75;
+    opacity: 0.75;
     -moz-opacity:0.75;
     -khtml-opacity: 0.75;
     padding: 5px 14px 8px 14px;
@@ -499,10 +499,10 @@ a:active .fa-4x  {
     font-size: 16px;
     z-index: 1000;
 }
-.slick-next::before {
+.slick-next:before {
     content: '❯'!important;
     color: #FFFFFF;
-     opacity: 0.75;
+    opacity: 0.75;
     -moz-opacity:0.75;
     -khtml-opacity: 0.75;
     padding: 5px 14px 8px 14px;
