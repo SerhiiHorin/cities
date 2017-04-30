@@ -491,27 +491,27 @@ a:active .fa-4x  {
     content: '❮'!important;
     color: #FFFFFF;
     background: transparent;
-    opacity: 0.75;
-    -moz-opacity:0.75;
-    -khtml-opacity: 0.75;
+    opacity: 0;
+    -moz-opacity:0;
+    -khtml-opacity: 0;
     padding: 5px 14px 8px 14px;
     text-decoration: none;
     border: 2px solid #FFFFFF;
     font-size: 16px;
-    z-index: 1001;
+    z-index: 1000;
 }
 .slick-next:before {
     content: '❯'!important;
     color: #FFFFFF;
     background: transparent;
-    opacity: 0.75;
-    -moz-opacity:0.75;
-    -khtml-opacity: 0.75;
+    opacity: 0;
+    -moz-opacity:0;
+    -khtml-opacity: 0;
     padding: 5px 14px 8px 14px;
     text-decoration: none;
     border: 2px solid #FFFFFF !important;
     font-size: 16px;
-    z-index: 1001;
+    z-index: 1000;
 }
 .btn-wrap {
     position: relative;
