@@ -487,7 +487,7 @@ a:active .fa-4x  {
     -khtml-opacity: 0.75;
     z-index: 1000;
 }
-.slick-prev:before {
+.slick-prev::before {
     content: '❮'!important;
     color: #FFFFFF;
     background: transparent;
@@ -498,9 +498,9 @@ a:active .fa-4x  {
     text-decoration: none;
     border: 2px solid #FFFFFF;
     font-size: 16px;
-    z-index: 1000;
+    z-index: 1001;
 }
-.slick-next:before {
+.slick-next::before {
     content: '❯'!important;
     color: #FFFFFF;
     background: transparent;
@@ -511,7 +511,7 @@ a:active .fa-4x  {
     text-decoration: none;
     border: 2px solid #FFFFFF !important;
     font-size: 16px;
-    z-index: 1000;
+    z-index: 1001;
 }
 .btn-wrap {
     position: relative;
