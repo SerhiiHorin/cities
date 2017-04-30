@@ -489,11 +489,8 @@ a:active .fa-4x  {
 }
 .slick-prev:before {
     content: '❮'!important;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     background: transparent;
-    opacity: 0;
-    -moz-opacity:0;
-    -khtml-opacity: 0;
     padding: 5px 14px 8px 14px;
     text-decoration: none;
     border: 2px solid #FFFFFF;
@@ -502,11 +499,8 @@ a:active .fa-4x  {
 }
 .slick-next:before {
     content: '❯'!important;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     background: transparent;
-    opacity: 0;
-    -moz-opacity:0;
-    -khtml-opacity: 0;
     padding: 5px 14px 8px 14px;
     text-decoration: none;
     border: 2px solid #FFFFFF !important;
