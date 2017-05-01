@@ -489,7 +489,7 @@ a:active .fa-4x  {
 }
 .slick-prev:before {
     content: '❮'!important;
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     background: transparent;
     padding: 5px 14px 8px 14px;
     text-decoration: none;
@@ -497,9 +497,10 @@ a:active .fa-4x  {
     font-size: 16px;
     z-index: 1000;
 }
-.slick-next:before {
+.slick-next::before {
     content: '❯'!important;
-    color: #FFFFFF !important;
+    
+    color: hsla(0, 0%, 100%, 0.75);
     background: transparent;
     padding: 5px 14px 8px 14px;
     text-decoration: none;
