@@ -516,7 +516,7 @@ a:active .fa-4x  {
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: #FFFFFF;
     outline: none;
     background: transparent;
 }
@@ -536,10 +536,7 @@ a:active .fa-4x  {
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-
+   
     opacity: .75;
     color: white;
 
@@ -548,33 +545,22 @@ a:active .fa-4x  {
 }
 
 
-[dir='rtl'] .slick-prev
-{
-    right: -25px;
-    left: auto;
-}
-.slick-prev:before
-{
-    content: 'â†';
+
+.slick-prev:before {
+    content: '❮';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: 'â†’';
+    content: '❮';
 }
 
 
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
+
+.slick-next:before {
+    content: '❯';
 }
-.slick-next:before
-{
-    content: 'â†’';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: 'â†';
+[dir='rtl'] .slick-next:before {
+    content: '❯';
 }
 
 .btn-wrap {
