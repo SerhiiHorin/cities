@@ -489,8 +489,6 @@ a:active .fa-4x  {
 }
 .slick-prev:before {
     content: '❮'!important;
-    color: #FFFFFF;
-    background: transparent;
     padding: 5px 14px 8px 14px;
     text-decoration: none;
     border: 2px solid #FFFFFF;
@@ -499,18 +497,12 @@ a:active .fa-4x  {
 }
 .slick-next:before {
     content: '❯'!important;
-    
-    color: hsla(0, 0%, 100%, 0.75);
-    background: transparent;
     padding: 5px 14px 8px 14px;
     text-decoration: none;
     border: 2px solid #FFFFFF !important;
     font-size: 16px;
     z-index: 1000;
 }
-
-
-
 
 .btn-wrap {
     position: relative;
