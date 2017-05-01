@@ -486,7 +486,6 @@ a:active .fa-4x  {
     -moz-opacity:0.75;
     -khtml-opacity: 0.75;
     z-index: 1000;
-    content: '❯'!important;
 }
 .slick-prev:before {
     content: '❮'!important;
@@ -498,7 +497,7 @@ a:active .fa-4x  {
     font-size: 16px;
     z-index: 1000;
 }
-.slick-next::before {
+.slick-next:before {
     content: '❯'!important;
     
     color: hsla(0, 0%, 100%, 0.75);
