@@ -516,7 +516,7 @@ a:active .fa-4x  {
 .slick-next:hover,
 .slick-next:focus
 {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     outline: none;
     background: transparent;
 }
@@ -547,20 +547,20 @@ a:active .fa-4x  {
 
 
 .slick-prev:before {
-    content: '❮';
+    content: '❮'!important;
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '❮';
+    content: '❮'!important;
 }
 
 
 
 .slick-next:before {
-    content: '❯';
+    content: '❯'!important;
 }
 [dir='rtl'] .slick-next:before {
-    content: '❯';
+    content: '❯'!important;
 }
 
 .btn-wrap {
